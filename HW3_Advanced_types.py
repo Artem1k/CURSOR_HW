@@ -118,4 +118,62 @@ for i in range(10):
     else:
         d[i] = i
 print("17.", d)
-dict_comprehension = {x: x**3 if x**3 % 4 == 0 else x for x in range(10)}
+
+# Lambda:
+#
+# (7)
+# def foo(x, y):
+#     if x < y:
+#         return x
+#     else:
+#         return y
+#
+# (8)
+# foo = lambda x, y, z: z if y < x and x > z else y
+#
+# 18. Convert (7) to lambda function
+foo = lambda x, y: x if x < y else y
+print("18.", foo(10, 5), foo(5, 10))
+
+
+# 19*. Convert (8) to regular function
+def foo(x, y, z):
+    if y < x and x > z:
+        return z
+    else:
+        return y
+
+
+print("19.", foo(1, 2, 3))
+
+lst_to_sort = [5, 18, 1, 24, 33, 15, 13, 55]
+# 20. Sort lst_to_sort from min to max
+print("20.", sorted(lst_to_sort))
+
+# 21. Sort lst_to_sort from max to min
+print("21.", sorted(lst_to_sort, reverse=True))
+
+# 22. Use map and lambda to update the lst_to_sort by multiply each element by 2
+print("22.", list(map(lambda x: x * 2, lst_to_sort)))
+
+# 23*. Raise each list number to the corresponding number on another list:
+list_A = [2, 3, 4]
+list_B = [5, 6, 7]
+print("23.", list(map(lambda x, y: x ** y, list_A, list_B)))
+
+# 24. Use reduce and lambda to compute the numbers of a lst_to_sort.
+from functools import reduce
+
+print("24.", reduce(lambda x, y: x + y, lst_to_sort))
+
+# 25. Use filter and lambda to filter the number of a lst_to_sort with elem % 2 == 1.
+print("25.", list(filter(lambda elem: elem % 2 == 1, lst_to_sort)))
+
+# 26. Considering the range of values: b = range(-10, 10), use the function filter to return only negative numbers.
+b = range(-10, 10)
+print("26.", list(filter(lambda x: x < 0, b)))
+
+# 27*. Using the filter function, find the values that are common to the two lists:
+list_1 = [1, 2, 3, 5, 7, 9]
+list_2 = [2, 3, 5, 6, 7, 8]
+print("27.", list(filter(lambda x: x in list_1, list_2)))
