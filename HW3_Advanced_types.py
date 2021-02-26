@@ -68,10 +68,7 @@ print("12.", List)
 # 13. Convert (2) to regular for with if-else
 List.clear()
 for i in range(10):
-    if i % 2 == 0:
-        List.append(i // 2)
-    else:
-        List.append(i * 10)
+    List.append(i // 2) if i % 2 == 0 else List.append(i * 10)
 print("13.", List)
 
 # (3)
@@ -113,10 +110,7 @@ print("16.", d)
 # 17*. Convert (6) to regular for with if-else.
 # d.clear()
 for i in range(10):
-    if i ** 3 % 4 == 0:
-        d[i] = i ** 3
-    else:
-        d[i] = i
+    d[i] = i ** 3 if i ** 3 % 4 == 0 else d[i] = i
 print("17.", d)
 
 # Lambda:
@@ -130,7 +124,7 @@ print("17.", d)
 #
 # (8)
 # foo = lambda x, y, z: z if y < x and x > z else y
-#
+
 # 18. Convert (7) to lambda function
 foo = lambda x, y: x if x < y else y
 print("18.", foo(10, 5), foo(5, 10))
@@ -138,10 +132,7 @@ print("18.", foo(10, 5), foo(5, 10))
 
 # 19*. Convert (8) to regular function
 def foo(x, y, z):
-    if y < x and x > z:
-        return z
-    else:
-        return y
+    return z if y < x and x > z else y
 
 
 print("19.", foo(1, 2, 3))
