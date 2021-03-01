@@ -133,8 +133,9 @@ print("16.", d)
 
 # 17*. Convert (6) to regular for with if-else.
 # d.clear()
+d = {}
 for i in range(10):
-    d[i] = i ** 3 if i ** 3 % 4 == 0 else d[i] = i
+    d[i] = i ** 3 if (i ** 3) % 4 == 0 else i
 print("17.", d)
 # Output: 17. {0: 0, 2: 8, 4: 64, 6: 216, 8: 512, 1: 1, 3: 3, 5: 5, 7: 7, 9: 9}
 
@@ -153,11 +154,15 @@ print("17.", d)
 # 18. Convert (7) to lambda function
 foo = lambda x, y: x if x < y else y
 print("18.", foo(10, 5), foo(5, 10))
+
+
 # Output: 18. 5 5
 
 # 19*. Convert (8) to regular function
 def foo(x, y, z):
     return z if y < x and x > z else y
+
+
 print("19.", foo(1, 2, 3))
 # Output: 19. 2
 
