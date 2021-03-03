@@ -133,7 +133,6 @@ print("16.", d)
 
 # 17*. Convert (6) to regular for with if-else.
 # d.clear()
-d = {}
 for i in range(10):
     d[i] = i ** 3 if (i ** 3) % 4 == 0 else i
 print("17.", d)
