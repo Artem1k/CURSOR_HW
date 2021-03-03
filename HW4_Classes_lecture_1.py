@@ -11,8 +11,6 @@ class Bus(Vehicle):
     def __init__(self, max_speed, mileage, seating_capacity):
         self.__seating_capacity = seating_capacity
         super().__init__(max_speed, mileage)
-    # def seating_capacity(self):
-    #     pass
 
 
 # 5. Create a new class School with get_school_id and number_of_students instance attributes
