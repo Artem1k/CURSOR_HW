@@ -12,6 +12,9 @@ class Bus(Vehicle):
         self.__seating_capacity = seating_capacity
         super().__init__(max_speed, mileage)
 
+    def get_seating_capacity(self):
+        return self.__seating_capacity
+
 
 # 5. Create a new class School with get_school_id and number_of_students instance attributes
 class School:
@@ -54,7 +57,7 @@ class City:
         print("Creating Instance")
         instance = super(City, cls).__new__(cls)
         if population <= 1500:
-            return print('Your city is too small')
+            return 'Your city is too small'
         else:
             return instance
 
@@ -115,11 +118,11 @@ City Lviv: 100000 population
 Creating Instance
 Your city is too small'''
 
-print(people_1 + 9)
-print(people_1 + 11)
+print("10.1", people_1 + 9)
+print("10.2", people_1 + 11)
 ''' 10.Output:
-100009
-1100000'''
+10.1 100009
+10.2 1100000'''
 
 summer = Sum()
 print(summer(5, 10))
