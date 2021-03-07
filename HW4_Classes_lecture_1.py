@@ -26,12 +26,13 @@ class School:
 # 6*. Create a new class SchoolBus that will inherit all of the methods from School and Bus
 # and will have its own - bus_school_color
 class SchoolBus(School, Bus):
-    def __init__(self, get_school_id, number_of_students, max_speed, mileage, seating_capacity):
+    def __init__(self, get_school_id, number_of_students, max_speed, mileage, seating_capacity, bus_school_color):
+        self._bus_school_color = bus_school_color
         School.__init__(self, get_school_id, number_of_students)
         Bus.__init__(self, max_speed, mileage, seating_capacity)
 
     def bus_school_color(self, color):
-        pass
+        return self.bus_school_color
 
 
 # 7. Polymorphism: Create two classes: Bear, Wolf. Both of them should have make_sound method.
