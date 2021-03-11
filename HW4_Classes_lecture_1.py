@@ -31,8 +31,8 @@ class SchoolBus(School, Bus):
         School.__init__(self, get_school_id, number_of_students)
         Bus.__init__(self, max_speed, mileage, seating_capacity)
 
-    def bus_school_color(self, color):
-        return self.bus_school_color
+    def bus_school_color(self):
+        return self._bus_school_color
 
 
 # 7. Polymorphism: Create two classes: Bear, Wolf. Both of them should have make_sound method.
