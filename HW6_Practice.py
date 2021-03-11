@@ -185,9 +185,6 @@ class TomatoBush:
     def __repr__(self):
         return f'{self._num} {self._vegetable_type} {self._name}'
 
-    def __del__(self):
-        del self
-
     @property
     def num(self):
         return self._num
@@ -259,9 +256,6 @@ class AppleTree:
 
     def __repr__(self):
         return f'{self._num} {self._fruit_type} {self._name}'
-
-    def __del__(self):
-        del self
 
     @property
     def num(self):
