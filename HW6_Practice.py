@@ -384,3 +384,108 @@ print('\n13. Steve is poisoning pests\n')
 gardener_steve.poison_pests(pests_beetle)
 print('\n14. Show the garden\n')
 my_garden.show_the_garden()
+
+'''
+1. Show the garden
+
+The garden has such vegetable bushes: [2 Red_tomato steve]
+Also garden has such fruit trees: [2 Golden steve]
+And such pests: 1 beetle
+The maintainer of the garden is Steve
+
+2. Steve is checking states
+
+Checking states!
+steve Golden 1 is nothing
+steve Golden 2 is nothing
+steve Red_tomato 1 is nothing
+steve Red_tomato 2 is nothing
+
+3. Steve is handling
+
+Gardener is working...
+steve Golden 1 is flowering
+steve Golden 2 is flowering
+steve Red_tomato 1 is flowering
+steve Red_tomato 2 is flowering
+Gardner is finished
+
+4. Steve is trying to harvest
+
+Gardener is harvesting...
+Too early! Your 2 Golden steve is not ripe.
+Too early! Your 2 Red_tomato steve is not ripe.
+
+5. Steve is checking states again
+
+Checking states!
+steve Golden 1 is flowering
+steve Golden 2 is flowering
+steve Red_tomato 1 is flowering
+steve Red_tomato 2 is flowering
+
+6. Steve is handling again
+
+Gardener is working...
+steve Golden 1 is green
+steve Golden 2 is green
+steve Red_tomato 1 is green
+steve Red_tomato 2 is green
+Gardner is finished
+
+Gardener is working...
+steve Golden 1 is red
+steve Golden 2 is red
+steve Red_tomato 1 is red
+steve Red_tomato 2 is red
+Gardner is finished
+
+7. Steve is try to handling
+
+Gardener is working...
+steve Golden 1 is red
+steve Golden 2 is red
+steve Red_tomato 1 is red
+steve Red_tomato 2 is red
+Gardner is finished
+
+8. Showing all the fruits and vegetables
+
+[(1, Golden, steve), (2, Golden, steve)]
+[(1, Red_tomato, steve), (2, Red_tomato, steve)]
+
+9. Show the garden
+
+The garden has such vegetable bushes: [2 Red_tomato steve]
+Also garden has such fruit trees: [2 Golden steve]
+And such pests: 1 beetle
+The maintainer of the garden is Steve
+
+10. Pests are eating a tomato
+
+Pest are eating!
+
+11. Steve are harvesting
+
+Gardener is harvesting...
+Harvesting 2 Golden steve is finished.
+Your 0 Red_tomato steve is empty!
+
+12. Show the garden
+
+The garden has such vegetable bushes: [0 Red_tomato steve]
+Also garden has such fruit trees: [2 Golden steve]
+And such pests: 1 beetle
+The maintainer of the garden is Steve
+
+13. Steve is poisoning pests
+
+Poisoning pests!
+
+14. Show the garden
+
+The garden has such vegetable bushes: [0 Red_tomato steve]
+Also garden has such fruit trees: [2 Golden steve]
+And such pests: 0 beetle
+The maintainer of the garden is Steve
+'''
