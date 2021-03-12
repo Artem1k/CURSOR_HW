@@ -149,6 +149,7 @@ class Tomato(Vegetables):
         super().__init__(vegetable_type, name)
         self._index = index
         self._vegetable_type = vegetable_type
+        self._name = name
         self._state = 0
         Tomato.instances.append(self)
 
@@ -204,6 +205,8 @@ class TomatoBush:
         # self._num = 0
 
     def pests_eating(self):
+        for el in self:
+            Tomato.instances.remove(el)
         self._tomatoes = []
         self._num = 0
 
@@ -221,11 +224,12 @@ class Apple(Fruits):
         super().__init__(fruit_type, name)
         self._index = index
         self._fruit_type = fruit_type
+        self._name = name
         self._state = 0
         Apple.instances.append(self)
 
     def __repr__(self):
-        return f'({self._index}, {self.fruit_type}, {self._name})'
+        return f'({self._index}, {self._fruit_type}, {self._name})'
 
     def grow(self):
         self._change_state()
@@ -276,6 +280,8 @@ class AppleTree:
         # self._num = 0
 
     def pests_eating(self):
+        for el in self:
+            Apple.instances.remove(el)
         self._apples = []
         self._num = 0
 
@@ -384,6 +390,9 @@ print('\n13. Steve is poisoning pests\n')
 gardener_steve.poison_pests(pests_beetle)
 print('\n14. Show the garden\n')
 my_garden.show_the_garden()
+print('\n15. Show instances after pests eat\n')
+print(Apple.instances)
+print(Tomato.instances)
 
 '''
 1. Show the garden
@@ -488,4 +497,9 @@ The garden has such vegetable bushes: [0 Red_tomato steve]
 Also garden has such fruit trees: [2 Golden steve]
 And such pests: 0 beetle
 The maintainer of the garden is Steve
+
+15. Show instances
+
+[(1, Golden, steve), (2, Golden, steve)]
+[]
 '''
