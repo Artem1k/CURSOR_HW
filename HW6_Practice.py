@@ -137,6 +137,7 @@ class Pests(ABC):
 
 
 class Tomato(Vegetables):
+    # When pests eat a plant, the plant removed from here, when gardener is harvesting a plant, the plant still here
     instances = []
 
     def __new__(cls, index, vegetable_type, name):
@@ -212,6 +213,7 @@ class TomatoBush:
 
 
 class Apple(Fruits):
+    # When pests eat a plant, the plant removed from here, when gardener is harvesting a plant, the plant still here
     instances = []
 
     def __new__(cls, index, fruit_type, name):
