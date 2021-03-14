@@ -351,56 +351,63 @@ class Pest(Pests):
         self._quantity = 0
 
 
-apple_tree_steve = AppleTree(2, 'Golden', 'steve')
-tomato_bush_steve = TomatoBush(2, 'Red_tomato', 'steve')
-gardener_steve = StarGardener('Steve', apple_tree_steve, tomato_bush_steve)
-pests_beetle = Pest('beetle', 1)
-fruits_stock = []  #
-vegetables_stock = []  #
-fruits_stock.append(apple_tree_steve)  #
-vegetables_stock.append(tomato_bush_steve)  #
-my_garden = Garden(vegetables_stock, fruits_stock, pests_beetle, gardener_steve)
+if __name__ == '__main__':
+    apple_tree_steve = AppleTree(2, 'Golden', 'steve')
+    tomato_bush_steve = TomatoBush(2, 'Red_tomato', 'steve')
+    apple_tree_trevor = AppleTree(3, FRUITS[2], 'trevor')
+    gardener_steve = StarGardener('Steve', apple_tree_steve, apple_tree_trevor, tomato_bush_steve)
+    pests_beetle = Pest('beetle', 1)
+    fruits_stock = []  #
+    vegetables_stock = []  #
+    fruits_stock.append(apple_tree_steve)  #
+    fruits_stock.append(apple_tree_trevor)  #
+    vegetables_stock.append(tomato_bush_steve)  #
+    my_garden = Garden(vegetables_stock, fruits_stock, pests_beetle, gardener_steve)
 
-print('\n1. Show the garden\n')
-my_garden.show_the_garden()
-print('\n2. Steve is checking states\n')
-gardener_steve.check_states()
-print('\n3. Steve is handling\n')
-gardener_steve.handling()
-print('\n4. Steve is trying to harvest\n')
-gardener_steve.harvest()
-print('\n5. Steve is checking states again\n')
-gardener_steve.check_states()
-print('\n6. Steve is handling again\n')
-gardener_steve.handling()
-print()
-gardener_steve.handling()
-print('\n7. Steve is try to handling\n')
-gardener_steve.handling()
-print('\n8. Showing all the fruits and vegetables\n')
-print(Apple.instances)
-print(Tomato.instances)
-print('\n9. Show the garden\n')
-my_garden.show_the_garden()
-print('\n10. Pests are eating a tomato\n')
-pests_beetle.eat(tomato_bush_steve)
-print('\n11. Steve are harvesting\n')
-gardener_steve.harvest()
-print('\n12. Show the garden\n')
-my_garden.show_the_garden()
-print('\n13. Steve is poisoning pests\n')
-gardener_steve.poison_pests(pests_beetle)
-print('\n14. Show the garden\n')
-my_garden.show_the_garden()
-print('\n15. Show instances after pests eat\n')
-print(Apple.instances)
-print(Tomato.instances)
+    print('\n1. Show the garden\n')
+    my_garden.show_the_garden()
+    print('\n2. Steve is checking states\n')
+    gardener_steve.check_states()
+    print('\n3. Steve is handling\n')
+    gardener_steve.handling()
+    print('\n4. Steve is trying to harvest\n')
+    gardener_steve.harvest()
+    print('\n5. Steve is checking states again\n')
+    gardener_steve.check_states()
+    print('\n6. Steve is handling again\n')
+    gardener_steve.handling()
+    print()
+    gardener_steve.handling()
+    print('\n7. Steve is try to handling\n')
+    gardener_steve.handling()
+    print('\n8. Showing all the fruits and vegetables\n')
+    print(Apple.instances)
+    print(Tomato.instances)
+    print('\n9. Show the garden\n')
+    my_garden.show_the_garden()
+    print('\n10. Pests are eating a tomato\n')
+    pests_beetle.eat(tomato_bush_steve)
+    print('\n11. Show the garden\n')
+    my_garden.show_the_garden()
+    print(f'\n12. Pests are eating a {FRUITS[2]}\n')
+    pests_beetle.eat(apple_tree_trevor)
+    print('\n13. Steve are harvesting\n')
+    gardener_steve.harvest()
+    print('\n14. Show the garden\n')
+    my_garden.show_the_garden()
+    print('\n15. Steve is poisoning pests\n')
+    gardener_steve.poison_pests(pests_beetle)
+    print('\n16. Show the garden\n')
+    my_garden.show_the_garden()
+    print('\n17. Show instances after pests eat\n')
+    print(Apple.instances)
+    print(Tomato.instances)
 
 '''
 1. Show the garden
 
 The garden has such vegetable bushes: [2 Red_tomato steve]
-Also garden has such fruit trees: [2 Golden steve]
+Also garden has such fruit trees: [2 Golden steve, 3 Green_apple trevor]
 And such pests: 1 beetle
 The maintainer of the garden is Steve
 
@@ -409,6 +416,9 @@ The maintainer of the garden is Steve
 Checking states!
 steve Golden 1 is nothing
 steve Golden 2 is nothing
+trevor Green_apple 1 is nothing
+trevor Green_apple 2 is nothing
+trevor Green_apple 3 is nothing
 steve Red_tomato 1 is nothing
 steve Red_tomato 2 is nothing
 
@@ -417,6 +427,9 @@ steve Red_tomato 2 is nothing
 Gardener is working...
 steve Golden 1 is flowering
 steve Golden 2 is flowering
+trevor Green_apple 1 is flowering
+trevor Green_apple 2 is flowering
+trevor Green_apple 3 is flowering
 steve Red_tomato 1 is flowering
 steve Red_tomato 2 is flowering
 Gardner is finished
@@ -425,6 +438,7 @@ Gardner is finished
 
 Gardener is harvesting...
 Too early! Your 2 Golden steve is not ripe.
+Too early! Your 3 Green_apple trevor is not ripe.
 Too early! Your 2 Red_tomato steve is not ripe.
 
 5. Steve is checking states again
@@ -432,6 +446,9 @@ Too early! Your 2 Red_tomato steve is not ripe.
 Checking states!
 steve Golden 1 is flowering
 steve Golden 2 is flowering
+trevor Green_apple 1 is flowering
+trevor Green_apple 2 is flowering
+trevor Green_apple 3 is flowering
 steve Red_tomato 1 is flowering
 steve Red_tomato 2 is flowering
 
@@ -440,6 +457,9 @@ steve Red_tomato 2 is flowering
 Gardener is working...
 steve Golden 1 is green
 steve Golden 2 is green
+trevor Green_apple 1 is green
+trevor Green_apple 2 is green
+trevor Green_apple 3 is green
 steve Red_tomato 1 is green
 steve Red_tomato 2 is green
 Gardner is finished
@@ -447,6 +467,9 @@ Gardner is finished
 Gardener is working...
 steve Golden 1 is red
 steve Golden 2 is red
+trevor Green_apple 1 is red
+trevor Green_apple 2 is red
+trevor Green_apple 3 is red
 steve Red_tomato 1 is red
 steve Red_tomato 2 is red
 Gardner is finished
@@ -456,19 +479,22 @@ Gardner is finished
 Gardener is working...
 steve Golden 1 is red
 steve Golden 2 is red
+trevor Green_apple 1 is red
+trevor Green_apple 2 is red
+trevor Green_apple 3 is red
 steve Red_tomato 1 is red
 steve Red_tomato 2 is red
 Gardner is finished
 
 8. Showing all the fruits and vegetables
 
-[(1, Golden, steve), (2, Golden, steve)]
+[(1, Golden, steve), (2, Golden, steve), (1, Green_apple, trevor), (2, Green_apple, trevor), (3, Green_apple, trevor)]
 [(1, Red_tomato, steve), (2, Red_tomato, steve)]
 
 9. Show the garden
 
 The garden has such vegetable bushes: [2 Red_tomato steve]
-Also garden has such fruit trees: [2 Golden steve]
+Also garden has such fruit trees: [2 Golden steve, 3 Green_apple trevor]
 And such pests: 1 beetle
 The maintainer of the garden is Steve
 
@@ -476,31 +502,43 @@ The maintainer of the garden is Steve
 
 Pest are eating!
 
-11. Steve are harvesting
-
-Gardener is harvesting...
-Harvesting 2 Golden steve is finished.
-Your 0 Red_tomato steve is empty!
-
-12. Show the garden
+11. Show the garden
 
 The garden has such vegetable bushes: [0 Red_tomato steve]
-Also garden has such fruit trees: [2 Golden steve]
+Also garden has such fruit trees: [2 Golden steve, 3 Green_apple trevor]
 And such pests: 1 beetle
 The maintainer of the garden is Steve
 
-13. Steve is poisoning pests
+12. Pests are eating a Green_apple
 
-Poisoning pests!
+Pest are eating!
+
+13. Steve are harvesting
+
+Gardener is harvesting...
+Harvesting 2 Golden steve is finished.
+Your 0 Green_apple trevor is empty!
+Your 0 Red_tomato steve is empty!
 
 14. Show the garden
 
 The garden has such vegetable bushes: [0 Red_tomato steve]
-Also garden has such fruit trees: [2 Golden steve]
+Also garden has such fruit trees: [2 Golden steve, 0 Green_apple trevor]
+And such pests: 1 beetle
+The maintainer of the garden is Steve
+
+15. Steve is poisoning pests
+
+Poisoning pests!
+
+16. Show the garden
+
+The garden has such vegetable bushes: [0 Red_tomato steve]
+Also garden has such fruit trees: [2 Golden steve, 0 Green_apple trevor]
 And such pests: 0 beetle
 The maintainer of the garden is Steve
 
-15. Show instances
+17. Show instances after pests eat
 
 [(1, Golden, steve), (2, Golden, steve)]
 []
