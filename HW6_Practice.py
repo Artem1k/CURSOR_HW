@@ -289,7 +289,7 @@ class AppleTree:
 
 
 class StarGardener(Gardener):
-    def __init__(self, name, *plants):
+    def __init__(self, name, plants):
         super().__init__(name, plants)
         self._name = name
         self._plants = plants
@@ -355,13 +355,11 @@ if __name__ == '__main__':
     apple_tree_steve = AppleTree(2, 'Golden', 'steve')
     tomato_bush_steve = TomatoBush(2, 'Red_tomato', 'steve')
     apple_tree_trevor = AppleTree(3, FRUITS[2], 'trevor')
-    gardener_steve = StarGardener('Steve', apple_tree_steve, apple_tree_trevor, tomato_bush_steve)
+    stock = [apple_tree_steve, apple_tree_trevor, tomato_bush_steve]
+    gardener_steve = StarGardener('Steve', stock)
     pests_beetle = Pest('beetle', 1)
-    fruits_stock = []  #
-    vegetables_stock = []  #
-    fruits_stock.append(apple_tree_steve)  #
-    fruits_stock.append(apple_tree_trevor)  #
-    vegetables_stock.append(tomato_bush_steve)  #
+    fruits_stock = stock[0:2]
+    vegetables_stock = stock[2]
     my_garden = Garden(vegetables_stock, fruits_stock, pests_beetle, gardener_steve)
 
     print('\n1. Show the garden\n')
@@ -416,62 +414,62 @@ The maintainer of the garden is Steve
 Checking states!
 steve Golden 1 is nothing
 steve Golden 2 is nothing
+steve Red_tomato 1 is nothing
+steve Red_tomato 2 is nothing
 trevor Green_apple 1 is nothing
 trevor Green_apple 2 is nothing
 trevor Green_apple 3 is nothing
-steve Red_tomato 1 is nothing
-steve Red_tomato 2 is nothing
 
 3. Steve is handling
 
 Gardener is working...
 steve Golden 1 is flowering
 steve Golden 2 is flowering
+steve Red_tomato 1 is flowering
+steve Red_tomato 2 is flowering
 trevor Green_apple 1 is flowering
 trevor Green_apple 2 is flowering
 trevor Green_apple 3 is flowering
-steve Red_tomato 1 is flowering
-steve Red_tomato 2 is flowering
 Gardner is finished
 
 4. Steve is trying to harvest
 
 Gardener is harvesting...
 Too early! Your 2 Golden steve is not ripe.
-Too early! Your 3 Green_apple trevor is not ripe.
 Too early! Your 2 Red_tomato steve is not ripe.
+Too early! Your 3 Green_apple trevor is not ripe.
 
 5. Steve is checking states again
 
 Checking states!
 steve Golden 1 is flowering
 steve Golden 2 is flowering
+steve Red_tomato 1 is flowering
+steve Red_tomato 2 is flowering
 trevor Green_apple 1 is flowering
 trevor Green_apple 2 is flowering
 trevor Green_apple 3 is flowering
-steve Red_tomato 1 is flowering
-steve Red_tomato 2 is flowering
 
 6. Steve is handling again
 
 Gardener is working...
 steve Golden 1 is green
 steve Golden 2 is green
+steve Red_tomato 1 is green
+steve Red_tomato 2 is green
 trevor Green_apple 1 is green
 trevor Green_apple 2 is green
 trevor Green_apple 3 is green
-steve Red_tomato 1 is green
-steve Red_tomato 2 is green
 Gardner is finished
 
 Gardener is working...
 steve Golden 1 is red
 steve Golden 2 is red
+steve Red_tomato 1 is red
+steve Red_tomato 2 is red
 trevor Green_apple 1 is red
 trevor Green_apple 2 is red
 trevor Green_apple 3 is red
-steve Red_tomato 1 is red
-steve Red_tomato 2 is red
 Gardner is finished
 
 7. Steve is try to handling
@@ -479,11 +477,11 @@ Gardner is finished
 Gardener is working...
 steve Golden 1 is red
 steve Golden 2 is red
+steve Red_tomato 1 is red
+steve Red_tomato 2 is red
 trevor Green_apple 1 is red
 trevor Green_apple 2 is red
 trevor Green_apple 3 is red
-steve Red_tomato 1 is red
-steve Red_tomato 2 is red
 Gardner is finished
 
 8. Showing all the fruits and vegetables
@@ -517,8 +515,8 @@ Pest are eating!
 
 Gardener is harvesting...
 Harvesting 2 Golden steve is finished.
-Your 0 Green_apple trevor is empty!
 Your 0 Red_tomato steve is empty!
+Your 0 Green_apple trevor is empty!
 
 14. Show the garden
 
