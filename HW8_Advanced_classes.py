@@ -25,7 +25,7 @@ class Animal(ABC):
 
     def _strength_loses(self):
         self.current_power *= 0.7
-        if self.current_power <= 0:
+        if self.current_power < 1:
             forest.remove_animal(self)
 
 
@@ -36,8 +36,6 @@ class Predator(Animal):
 
     def eat(self, forest: Forest):
         food = forest.animals.get(random.choice(list(forest.animals.keys())))
-        # while food.current_power == 0:
-        #     food = forest.animals.get(random.choice(list(forest.animals.keys())))
         if self.id == food.id:
             print(f'Predator {self.id} with speed {self.speed} and power {self.current_power} '
                   f'was unlucky and he was left without a dinner')
@@ -49,7 +47,6 @@ class Predator(Animal):
                       f'Also restores 50% of strength')
                 self._strength_restores()
                 forest.remove_animal(food)
-                # return forest.remove_animal(food)
             else:
                 print(f'Predator {self.id} with speed {self.speed} and power {self.current_power} '
                       f'did not enough strength and loses 30% of strength. Also food '
