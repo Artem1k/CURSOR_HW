@@ -62,22 +62,25 @@ class Herbivorous(Animal):
         self._strength_restores()
 
 
-AnyAnimal = Any[Herbivorous, Predator]
+AnyAnimal = [Herbivorous, Predator]
 
 
 class Forest:
 
     def __init__(self):
-        self.animals: Dict[str, AnyAnimal] = dict()
+        self.animals: Dict[str, AnyAnimal: Any] = dict()
 
     def __iter__(self):
-        return list(self.animals.values())
+        return iter(list(self.animals.values()))
 
     def add_animal(self, animal: AnyAnimal):
         self.animals[str(animal.id)] = animal
 
     def remove_animal(self, animal: AnyAnimal):
         self.animals.pop(str(animal.id))
+
+    def any_predator_left(self):
+        return all(isinstance(item, Herbivorous) for item in self.animals.values())
 
 
 def animal_generator(quantity):
@@ -93,15 +96,16 @@ if __name__ == "__main__":
     # Add animals to forest
     # Iterate throw forest and force animals to eat until no predators left
     # animal_generator to create a random animal
-    nature = animal_generator()
+    nature = animal_generator(10)
 
     forest = Forest()
     for i in range(10):
         animal = next(nature)
         forest.add_animal(animal)
-
+    print(forest.animals)
+    print(forest.any_predator_left())
     while True:
-        if not forest.any_predator_left():
+        if forest.any_predator_left():
             break
         for animal in forest:
             animal.eat(forest=forest)
