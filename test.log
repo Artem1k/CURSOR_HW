@@ -1,0 +1,50 @@
+2021-03-23 19:47:37,100 - root - INFO - str_point: 1 - /home/artem/PycharmProjects/CURSOR_HW/HW9_Logging_and_Exceptions.py
+2021-03-23 19:47:41,501 - root - INFO - str_num in def number(): 4. - 
+ in line: 57 - /home/artem/PycharmProjects/CURSOR_HW/HW9_Logging_and_Exceptions.py
+2021-03-23 19:47:41,501 - root - INFO - num in def number(): 4. - 
+ in line: 57 - /home/artem/PycharmProjects/CURSOR_HW/HW9_Logging_and_Exceptions.py
+2021-03-23 19:47:43,238 - root - INFO - str_num in def number(): h. - 
+ in line: 59 - /home/artem/PycharmProjects/CURSOR_HW/HW9_Logging_and_Exceptions.py
+2021-03-23 19:47:43,238 - root - ERROR - ValueError in def number() - /home/artem/PycharmProjects/CURSOR_HW/HW9_Logging_and_Exceptions.py
+2021-03-23 19:47:45,425 - root - INFO - str_num in def number(): 6. - 
+ in line: 59 - /home/artem/PycharmProjects/CURSOR_HW/HW9_Logging_and_Exceptions.py
+2021-03-23 19:47:45,426 - root - INFO - num in def number(): 6. - 
+ in line: 59 - /home/artem/PycharmProjects/CURSOR_HW/HW9_Logging_and_Exceptions.py
+2021-03-23 19:47:45,426 - root - INFO - Сума: 10 - /home/artem/PycharmProjects/CURSOR_HW/HW9_Logging_and_Exceptions.py
+2021-03-23 19:47:49,999 - root - INFO - str_point: 7 - /home/artem/PycharmProjects/CURSOR_HW/HW9_Logging_and_Exceptions.py
+2021-03-23 19:47:59,038 - root - INFO - str_num in def number(): 100. - 
+ in line: 119 - /home/artem/PycharmProjects/CURSOR_HW/HW9_Logging_and_Exceptions.py
+2021-03-23 19:47:59,038 - root - INFO - num in def number(): 100. - 
+ in line: 119 - /home/artem/PycharmProjects/CURSOR_HW/HW9_Logging_and_Exceptions.py
+2021-03-23 19:48:02,944 - root - INFO - str_num in def number(): -5. - 
+ in line: 110 - /home/artem/PycharmProjects/CURSOR_HW/HW9_Logging_and_Exceptions.py
+2021-03-23 19:48:02,945 - root - INFO - num in def number(): -5. - 
+ in line: 110 - /home/artem/PycharmProjects/CURSOR_HW/HW9_Logging_and_Exceptions.py
+2021-03-23 19:48:10,508 - root - INFO - str_num in def number(): 5. - 
+ in line: 110 - /home/artem/PycharmProjects/CURSOR_HW/HW9_Logging_and_Exceptions.py
+2021-03-23 19:48:10,509 - root - INFO - num in def number(): 5. - 
+ in line: 110 - /home/artem/PycharmProjects/CURSOR_HW/HW9_Logging_and_Exceptions.py
+2021-03-23 19:48:10,509 - root - INFO - Результат: 5.0 - /home/artem/PycharmProjects/CURSOR_HW/HW9_Logging_and_Exceptions.py
+2021-03-23 19:48:14,728 - root - INFO - str_point: 4 - /home/artem/PycharmProjects/CURSOR_HW/HW9_Logging_and_Exceptions.py
+2021-03-23 19:48:16,728 - root - INFO - str_num in def number(): 5. - 
+ in line: 81 - /home/artem/PycharmProjects/CURSOR_HW/HW9_Logging_and_Exceptions.py
+2021-03-23 19:48:16,729 - root - INFO - num in def number(): 5. - 
+ in line: 81 - /home/artem/PycharmProjects/CURSOR_HW/HW9_Logging_and_Exceptions.py
+2021-03-23 19:48:17,753 - root - INFO - str_num in def number(): 0. - 
+ in line: 83 - /home/artem/PycharmProjects/CURSOR_HW/HW9_Logging_and_Exceptions.py
+2021-03-23 19:48:17,753 - root - INFO - num in def number(): 0. - 
+ in line: 83 - /home/artem/PycharmProjects/CURSOR_HW/HW9_Logging_and_Exceptions.py
+2021-03-23 19:48:17,753 - root - WARNING - ZeroDivisionError - /home/artem/PycharmProjects/CURSOR_HW/HW9_Logging_and_Exceptions.py
+2021-03-23 19:48:17,754 - root - INFO - Частка: infinity - /home/artem/PycharmProjects/CURSOR_HW/HW9_Logging_and_Exceptions.py
+2021-03-23 19:48:25,674 - root - INFO - str_point: 6 - /home/artem/PycharmProjects/CURSOR_HW/HW9_Logging_and_Exceptions.py
+2021-03-23 19:48:30,703 - root - INFO - str_num in def number(): 25. - 
+ in line: 101 - /home/artem/PycharmProjects/CURSOR_HW/HW9_Logging_and_Exceptions.py
+2021-03-23 19:48:30,703 - root - INFO - num in def number(): 25. - 
+ in line: 101 - /home/artem/PycharmProjects/CURSOR_HW/HW9_Logging_and_Exceptions.py
+2021-03-23 19:48:33,614 - root - INFO - str_num in def number(): 2. - 
+ in line: 103 - /home/artem/PycharmProjects/CURSOR_HW/HW9_Logging_and_Exceptions.py
+2021-03-23 19:48:33,615 - root - INFO - num in def number(): 2. - 
+ in line: 103 - /home/artem/PycharmProjects/CURSOR_HW/HW9_Logging_and_Exceptions.py
+2021-03-23 19:48:33,616 - root - INFO - Результат: 5.0 - /home/artem/PycharmProjects/CURSOR_HW/HW9_Logging_and_Exceptions.py
+2021-03-23 19:48:42,772 - root - INFO - str_point: 8 - /home/artem/PycharmProjects/CURSOR_HW/HW9_Logging_and_Exceptions.py
+2021-03-23 19:48:42,772 - root - INFO - exit - /home/artem/PycharmProjects/CURSOR_HW/HW9_Logging_and_Exceptions.py
