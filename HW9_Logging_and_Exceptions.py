@@ -49,87 +49,96 @@ while True:
     logging.info(f'str_point: {str_point}')
     try:
         point = int(str_point)
+        # Додавання
+        if point == 1:
+            print('Введіть перший доданок: ', end='')
+            num1 = number()
+            print('Введіть другий доданок: ', end='')
+            num2 = number()
+            result = num1 + num2
+            logging.info(f'Сума: {result}')
+            print(f'Сума: {result}')
+        # Віднімання
+        elif point == 2:
+            print('Введіть зменшуване: ', end='')
+            num1 = number()
+            print('Введіть від\'ємник: ', end='')
+            num2 = number()
+            result = num1 - num2
+            logging.info(f'Різниця: {result}')
+            print(f'Різниця: {result}')
+        # Множення
+        elif point == 3:
+            print('Введіть перший множник: ', end='')
+            num1 = number()
+            print('Введіть другий множник: ', end='')
+            num2 = number()
+            result = num1 * num2
+            logging.info(f'Добуток: {result}')
+            print(f'Добуток: {result}')
+        # Ділення
+        elif point == 4:
+            print('Введіть ділене: ', end='')
+            num1 = number()
+            print('Введіть дільник: ', end='')
+            num2 = number()
+            try:
+                result = num1 / num2
+            except ZeroDivisionError:
+                logging.warning('ZeroDivisionError')
+                result = 'infinity'
+            logging.info(f'Частка: {result}')
+            print(f'Частка: {result}')
+        # Піднесення в степінь
+        elif point == 5:
+            print('Введіть число: ', end='')
+            num1 = number()
+            print('Введіть степінь: ', end='')
+            num2 = number()
+            result = num1 ** num2
+            logging.info(f'Результат: {result}')
+            print(f'Результат: {result}')
+        # Взяття з під кореня
+        elif point == 6:
+            print('Введіть число: ', end='')
+            num1 = number()
+            print('Введіть степінь кореня: ', end='')
+            num2 = number()
+            try:
+                result = num1 ** (1 / num2)
+            except ZeroDivisionError:
+                logging.warning('ZeroDivisionError')
+                result = 'infinity'
+            logging.info(f'Результат: {result}')
+            print(f'Результат: {result}')
+        # Пошук відсотку від числа
+        elif point == 7:
+            def sub_number():
+                while True:
+                    num = number()
+                    if num < 0:
+                        print('Відсоток не може бути мінусовий')
+                    else:
+                        return num
+
+
+            print('Введіть число: ', end='')
+            num1 = number()
+            print('Введіть відсотки: ', end='')
+            num2 = sub_number()
+            result = num1 * (num2 / 100)
+            logging.info(f'Результат: {result}')
+            print(f'Результат: {result}')
+        elif point == 8:
+            logging.info('exit')
+            print('exit')
+            break
+        else:
+            logging.warning(f'Incorrect number of act!')
+            print('Incorrect!')
     except ValueError:
         logging.error('ValueError when tried to int(str_point)')
         print('Incorrect!')
-    if point == 1:
-        print('Введіть перший доданок: ', end='')
-        num1 = number()
-        print('Введіть другий доданок: ', end='')
-        num2 = number()
-        result = num1 + num2
-        logging.info(f'Сума: {result}')
-        print(f'Сума: {result}')
-    elif point == 2:
-        print('Введіть зменшуване: ', end='')
-        num1 = number()
-        print('Введіть від\'ємник: ', end='')
-        num2 = number()
-        result = num1 - num2
-        logging.info(f'Різниця: {result}')
-        print(f'Різниця: {result}')
-    elif point == 3:
-        print('Введіть перший множник: ', end='')
-        num1 = number()
-        print('Введіть другий множник: ', end='')
-        num2 = number()
-        result = num1 * num2
-        logging.info(f'Добуток: {result}')
-        print(f'Добуток: {result}')
-    elif point == 4:
-        print('Введіть ділене: ', end='')
-        num1 = number()
-        print('Введіть дільник: ', end='')
-        num2 = number()
-        try:
-            result = num1 / num2
-        except ZeroDivisionError:
-            logging.warning('ZeroDivisionError')
-            result = 'infinity'
-        logging.info(f'Частка: {result}')
-        print(f'Частка: {result}')
-    elif point == 5:
-        print('Введіть число: ', end='')
-        num1 = number()
-        print('Введіть степінь: ', end='')
-        num2 = number()
-        result = num1 ** num2
-        logging.info(f'Результат: {result}')
-        print(f'Результат: {result}')
-    elif point == 6:
-        print('Введіть число: ', end='')
-        num1 = number()
-        print('Введіть степінь кореня: ', end='')
-        num2 = number()
-        result = num1 ** (1 / num2)
-        logging.info(f'Результат: {result}')
-        print(f'Результат: {result}')
-    elif point == 7:
-        def sub_number():
-            while True:
-                num = number()
-                if num < 0:
-                    print('Відсоток не може бути мінусовий')
-                else:
-                    return num
-                    break
-
-
-        print('Введіть число: ', end='')
-        num1 = number()
-        print('Введіть відсотки: ', end='')
-        num2 = sub_number()
-        result = num1 * (num2 / 100)
-        logging.info(f'Результат: {result}')
-        print(f'Результат: {result}')
-    elif point == 8:
-        logging.info('exit')
-        print('exit')
-        break
-    else:
-        logging.warning(f'Incorrect number of act!')
-        print('Incorrect!')
-
 
 '''Це калькулятор!
 Що ви хочете виконати?
@@ -142,11 +151,9 @@ while True:
 7.Пошук відсотку від числа
 8.Exit
 1
-Введіть перший доданок: 4
-Введіть другий доданок: h
-ValueError
-6
-Сума: 10
+Введіть перший доданок: 5
+Введіть другий доданок: 4
+Сума: 9
 Що ви хочете виконати?
 1.Додавання
 2.Віднімання
@@ -156,12 +163,27 @@ ValueError
 6.Взяття з під кореня
 7.Пошук відсотку від числа
 8.Exit
-7
-Введіть число: 100
-Введіть відсотки: -5
-Процент не може бути мінусовий
+2
+Введіть зменшуване: 4
+Введіть від'ємник: 6
+Різниця: -2
+Що ви хочете виконати?
+1.Додавання
+2.Віднімання
+3.Множення
+4.Ділення
+5.Піднесення в степінь
+6.Взяття з під кореня
+7.Пошук відсотку від числа
+8.Exit
+3
+Введіть перший множник: l
+ValueError
 5
-Результат: 5.0
+Введіть другий множник: k
+ValueError
+8
+Добуток: 40
 Що ви хочете виконати?
 1.Додавання
 2.Віднімання
@@ -184,10 +206,62 @@ ValueError
 6.Взяття з під кореня
 7.Пошук відсотку від числа
 8.Exit
+4
+Введіть ділене: 8
+Введіть дільник: 2
+Частка: 4.0
+Що ви хочете виконати?
+1.Додавання
+2.Віднімання
+3.Множення
+4.Ділення
+5.Піднесення в степінь
+6.Взяття з під кореня
+7.Пошук відсотку від числа
+8.Exit
+5
+Введіть число: 5
+Введіть степінь: -2
+Результат: 0.04
+Що ви хочете виконати?
+1.Додавання
+2.Віднімання
+3.Множення
+4.Ділення
+5.Піднесення в степінь
+6.Взяття з під кореня
+7.Пошук відсотку від числа
+8.Exit
 6
-Введіть число: 25
-Введіть степінь кореня: 2
-Результат: 5.0
+Введіть число: 125
+Введіть степінь кореня: 3
+Результат: 4.999999999999999
+Що ви хочете виконати?
+1.Додавання
+2.Віднімання
+3.Множення
+4.Ділення
+5.Піднесення в степінь
+6.Взяття з під кореня
+7.Пошук відсотку від числа
+8.Exit
+7
+Введіть число: 50
+Введіть відсотки: -1
+Відсоток не може бути мінусовий
+40
+Результат: 20.0
+Що ви хочете виконати?
+1.Додавання
+2.Віднімання
+3.Множення
+4.Ділення
+5.Піднесення в степінь
+6.Взяття з під кореня
+7.Пошук відсотку від числа
+8.Exit
+88
+Incorrect!
 Що ви хочете виконати?
 1.Додавання
 2.Віднімання
@@ -220,6 +294,10 @@ class FullTrash(Exception):
 
 
 class CleanerWork:
+    def __new__(cls, battery, trash, water):
+        if (battery in range(101)) and (trash in range(201)) and (water in range(501)):
+            return super(CleanerWork, cls).__new__(cls, battery, trash, water)
+
     def __init__(self, battery, trash, water):
         self.battery = battery
         self.trash = trash
@@ -227,14 +305,16 @@ class CleanerWork:
 
     def move(self):
         while True:
-            time.sleep(1)
-            print('move')
+            # time.sleep(1)
+            # print('move')
             try:
+                self.low_battery_check()
                 self.vacuum_cleaner()
                 self.wash()
             except EmptyWater:
                 while True:
                     try:
+                        self.low_battery_check()
                         self.vacuum_cleaner()
                     except LowBattery:
                         for i in range(20):
@@ -255,8 +335,9 @@ class CleanerWork:
                         self.vacuum_cleaner()
                         self.wash()
                     except EmptyWater:
-                        for j in range(20 - i):
+                        while i < 19:
                             try:
+                                i += 1
                                 self.vacuum_cleaner()
                             except FullTrash:
                                 print('Почистіть мене від сміття!')
@@ -278,9 +359,11 @@ class CleanerWork:
         else:
             raise EmptyWater
 
-    def vacuum_cleaner(self):
+    def low_battery_check(self):
         if self.battery == 20:
             raise LowBattery
+
+    def vacuum_cleaner(self):
         if self.battery > 0:
             self.battery -= 1
         else:
