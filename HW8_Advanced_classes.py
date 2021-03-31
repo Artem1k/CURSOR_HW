@@ -52,10 +52,6 @@ class Predator(Animal):
 
 
 class Herbivorous(Animal):
-
-    def __init__(self, id, power, speed):
-        super().__init__(id, power, speed)
-
     def eat(self, forest: Forest):
         print(f'Herbivorous {self.id} is eating')
         self._strength_restores()
