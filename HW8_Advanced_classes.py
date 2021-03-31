@@ -30,10 +30,6 @@ class Animal(ABC):
 
 
 class Predator(Animal):
-
-    def __init__(self, id, power, speed):
-        super().__init__(id, power, speed)
-
     def eat(self, forest: Forest):
         food = forest.animals.get(random.choice(list(forest.animals.keys())))
         if self.id == food.id:
