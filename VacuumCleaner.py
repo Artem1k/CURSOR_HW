@@ -1,24 +1,14 @@
-class LowBattery(Exception):
-    pass
-
-
-class DeadBattery(Exception):
-    pass
-
-
-class EmptyWater(Exception):
-    pass
-
-
-class FullTrash(Exception):
-    pass
+from Exceptions import *
 
 
 class CleanerWork:
     def __new__(cls, battery, trash, water):
         if (int(battery) in range(101)) and (int(trash) in range(201)) and (int(water) in range(501)):
             return object.__new__(cls)
-        assert ('d2f3vervrfdsg')
+        try:
+            raise WrongInboundData
+        except WrongInboundData:
+            return print('Wrong inbound data')
 
     def __init__(self, battery, trash, water):
         self.battery = int(battery)
