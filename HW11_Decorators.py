@@ -110,6 +110,10 @@ def type_check(correct_type):
 
 @type_check(int)
 def times2(num):
+    """
+    :param num:
+    :return:
+    """
     return num * 2
 
 
@@ -119,6 +123,10 @@ times2('Not A Number')  # "Wrong Type: string" should be printed, since non-int 
 
 @type_check(str)
 def first_letter(word):
+    """
+    :param word:
+    :return:
+    """
     return word[0]
 
 
