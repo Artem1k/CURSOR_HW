@@ -21,12 +21,13 @@ def add(a, b):
 
 
 print(add(5, 5))  # 20
-print(2.)
-
 
 # 2. only_odd_parameters
 # This decorator function should only allow a function to have odd numbers as parameters,
 # otherwise return the string "Please use only odd numbers!"
+print('\n2.')
+
+
 def only_odd_parameters(func):
     # if args passed to func are not odd - return "Please use only odd numbers!"
     @wraps(func)
@@ -53,55 +54,68 @@ def multiply(a, b, c, d, e):
     return a * b * c * d * e
 
 
-print(3.)
-
-
 # 3.* logged
 # Write a decorator which wraps functions to log function arguments and the return value on each call.
 # Provide support for both positional and named arguments (your wrapper function should take both *args
 # and **kwargs and print them both):
+print('\n3.')
+import logging
+
+log_format = ' %(asctime)s - %(name)s - %(levelname)s -%(message)s'
+logging.basicConfig(level=logging.INFO, format=log_format)
+
+
 def logged(func):
     @wraps(func)
     def inner(*args):
         """
+        logged
         :param args:
-        :return:
+        :return: func
         """
-        print(f'Your list is {args}, that length is {len(args)}')
-        print(func(*args))
+        logging.info(f'Calling {func.__name__}')
+        logging.info(f'The doc string of this func ic {func.__doc__}')
+        logging.info(f'This func otakes {args}')
+        return print(func(*args))
 
     return inner
 
 
 @logged
 def func(*args):
+    """
+    :param args:
+    :return: 3 + len(args)
+    """
     return 3 + len(args)
 
 
 func(4, 4, 4)
-
+print(func.__name__)
+print(func.__doc__)
 # you called func(4, 4, 4)
 # it returned 6
-print(4.)
-
 
 # 4. type_check
 # you should be able to pass 1 argument to decorator - type.
 # decorator should check if the input to the function is correct based on type.
 # If it is wrong, it should print(f"Wrong Type: {type}"), otherwise function should be executed.
+print('\n4.')
+
 
 def type_check(correct_type):
     def type_check_decorator(func):
         @wraps(func)
         def inner(a):
             """
+            type_check inner
             :param a:
             :return:
             """
             if isinstance(a, correct_type):
                 return func(a)
-            return print(f'"Wrong Type: {str(type(a))[1:-1].split()[1][1:-1]}" should be printed, '
-                         f'since non-{str(correct_type)[1:-1].split()[1][1:-1]} passed to decorated function')
+            return print(f'"Wrong Type: {a.__class__.__name__}" should be printed, '
+                         f'since non-{correct_type.__name__} passed to decorated function')
 
         return inner
 
@@ -112,7 +126,7 @@ def type_check(correct_type):
 def times2(num):
     """
     :param num:
-    :return:
+    :return: num + 2
     """
     return num * 2
 
@@ -125,7 +139,7 @@ times2('Not A Number')  # "Wrong Type: string" should be printed, since non-int 
 def first_letter(word):
     """
     :param word:
-    :return:
+    :return: word[0]
     """
     return word[0]
 
