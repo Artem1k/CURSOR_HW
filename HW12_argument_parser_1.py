@@ -66,3 +66,6 @@ with open(args.path_to_source_files, 'r') as f:
                 if row['Город'] != args.city:
                     continue
             writer.writerow(row)
+'''python3 HW12_argument_parser_1.py --exp 10 --path_to_source_files 2020_june_mini.csv
+Output: 
+'''
