@@ -2,7 +2,7 @@ from Exceptions import *
 
 
 class Registration:
-    users_email = []
+    USERS = {}
     usernames = []
 
     def __new__(cls, *args, **kwargs):
@@ -21,10 +21,8 @@ class Registration:
         else:
             try:
                 PasswordCheck.password_check(psw)
-                cls.users_email.append(email)
+                cls.USERS[email] = psw
                 cls.usernames.append(username)
-                # instance = super().__new__(cls).__init__(username, email, psw)
-                # instance.__init__(username, email, psw)
                 return super().__new__(cls)
                 # return print('200')
             except TooShortPassword:
@@ -46,7 +44,7 @@ class Registration:
 
     @staticmethod
     def email_exist(email):
-        if email in Registration.users_email:
+        if email in Registration.USERS.keys():
             raise EmailAlreadyExist
         else:
             return True
@@ -57,6 +55,21 @@ class Registration:
             raise UsernameAlreadyExist
         else:
             return True
+
+
+class UserToken:
+    def __new__(cls, *args, **kwargs):
+        try:
+            email, psw = args
+        except ValueError:
+            return print('400\nValueError')
+        if Registration.USERS[email] == psw:
+            return super().__new__(cls)
+        else:
+            raise InvalidNameOrPassword
+
+    def __init__(self, email, password):
+        print("Correct")
 
 
 class PasswordCheck:

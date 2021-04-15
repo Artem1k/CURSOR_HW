@@ -1,3 +1,7 @@
+class InvalidNameOrPassword(Exception):
+    pass
+
+
 class InvalidPassword(Exception):
     pass
 

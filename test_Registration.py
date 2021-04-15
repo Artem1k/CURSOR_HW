@@ -14,9 +14,9 @@ class TestRegistration(unittest.TestCase):
         self.user3 = Registration()
         self.user4 = Registration('Artem', 'artem2000@gmail.com', '1234567')
         self.user5 = Registration('Bodya', 'bodya@gmail.com', '1234#%^#567')
-        self.user6 = Registration('Igor', ['Igor@gmail.com'], '5345.678')
         with self.assertRaises(TypeError):
-            self.user6 = Registration('Igor', ['Igor@gmail.com'], 53456780)
+            self.user6 = Registration('Igor', 'Igor@gmail.com', 53456780)
+            self.user6 = Registration('Igor', ['Igor@gmail.com'], '5345.678')
 
     def test_email_exist(self):
         for user in self.users:
@@ -29,6 +29,21 @@ class TestRegistration(unittest.TestCase):
             with self.assertRaises(UsernameAlreadyExist):
                 Registration.username_exist(user.username)
         self.assertTrue(Registration.email_exist('who'))
+
+
+class TestUserToken(unittest.TestCase):
+    def setUp(self) -> None:
+        self.user1 = Registration('Artem', 'artemboyko2002@gmail.com', '1234567')
+        self.user2 = Registration('Maxim', 'maxim@gmail.com', 'ascywegb')
+        self.users = [self.user1, self.user2]
+
+    def test_new(self):
+        self.user_token1 = UserToken('artemboyko2002@gmail.com', '1234567')
+        self.user_token2 = UserToken('maxim@gmail.com', 'ascywegb')
+        with self.assertRaises(KeyError):
+            UserToken('bodya@gmail.com', '1234#%^#567')
+        with self.assertRaises(InvalidNameOrPassword):
+            UserToken('artemboyko2002@gmail.com', 'ascywegb')
 
 
 class TestPasswordCheck(unittest.TestCase):
@@ -72,4 +87,3 @@ class TestPasswordCheck(unittest.TestCase):
             self.psw.password_check(1234567)
         with self.assertRaises(InvalidSymbols):
             self.psw.password_check('5345.678')
-
