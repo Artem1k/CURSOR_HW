@@ -8,7 +8,8 @@ class TestCleanerWork(unittest.TestCase):
         self.cleaner_2 = CleanerWork(50, 35, 200)
         self.cleaner_3 = CleanerWork('75', 110.5, 250.9)
         self.cleaner_4 = CleanerWork('0', 0.0, 0)
-        self.cleaners = [self.cleaner_1, self.cleaner_2, self.cleaner_3, self.cleaner_4]
+        self.cleaner_5 = CleanerWork(50, 50, 20)
+        self.cleaners = [self.cleaner_1, self.cleaner_2, self.cleaner_3, self.cleaner_4, self.cleaner_5]
 
     def test_init(self):
         with self.assertRaises(ValueError):
@@ -30,10 +31,15 @@ class TestCleanerWork(unittest.TestCase):
                 cleaner.wash()
             except EmptyWater:
                 continue
+        with self.assertRaises(EmptyWater):
+            self.cleaner_4.wash()
 
     def test_low_battery_check(self):
         for cleaner in self.cleaners:
             cleaner.low_battery_check()
+        with self.assertRaises(LowBattery):
+            self.cleaner_5.low_battery_check()
+
 
     def test_vacuum_cleaner(self):
         for cleaner in self.cleaners:
@@ -48,11 +54,15 @@ class TestCleanerWork(unittest.TestCase):
     def test_recharge(self):
         for cleaner in self.cleaners:
             cleaner.recharge()
+            self.assertEqual(cleaner.battery, 100)
 
     def test_to_clean(self):
         for cleaner in self.cleaners:
             cleaner.to_clean()
+            self.assertEqual(cleaner.trash, 0)
 
     def test_add_water(self):
         for cleaner in self.cleaners:
             cleaner.add_water()
+            self.assertEqual(cleaner.water, 500)
+

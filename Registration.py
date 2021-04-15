@@ -89,3 +89,5 @@ class PasswordCheck:
         except IncorrectLengthPassword:
             print('400\nIncorrectLengthPassword')
             PasswordCheck.password_short_or_long(psw)
+        # except TypeError:
+        #     print('400\nTypeError')
