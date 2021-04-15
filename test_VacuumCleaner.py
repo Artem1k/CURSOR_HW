@@ -24,6 +24,27 @@ class TestCleanerWork(unittest.TestCase):
             with self.subTest(battery=cleaner.battery, trash=cleaner.trash, water=cleaner.water):
                 cleaner.move()
 
+    def test_wash(self):
+        for cleaner in self.cleaners:
+            try:
+                cleaner.wash()
+            except EmptyWater:
+                continue
+
+    def test_low_battery_check(self):
+        for cleaner in self.cleaners:
+            cleaner.low_battery_check()
+
+    def test_vacuum_cleaner(self):
+        for cleaner in self.cleaners:
+            with self.subTest(battery=cleaner.battery, trash=cleaner.trash, water=cleaner.water):
+                try:
+                    cleaner.vacuum_cleaner()
+                except FullTrash:
+                    continue
+                except DeadBattery:
+                    continue
+
     def test_recharge(self):
         for cleaner in self.cleaners:
             cleaner.recharge()

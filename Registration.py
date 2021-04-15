@@ -23,9 +23,10 @@ class Registration:
                 PasswordCheck.password_check(psw)
                 cls.users_email.append(email)
                 cls.usernames.append(username)
-                instance = super().__new__(cls)
-                instance.__init__(username, email, psw)
-                return print('200')
+                # instance = super().__new__(cls).__init__(username, email, psw)
+                # instance.__init__(username, email, psw)
+                return super().__new__(cls)
+                # return print('200')
             except TooShortPassword:
                 return print('TooShortPassword')
             except TooLongPassword:
@@ -38,22 +39,25 @@ class Registration:
         self.email = email
         self.psw = password
         self.data = [self.username, self.email, self.psw]
+        print('200')
 
     def __str__(self):
         return f'Your username: {self.username}\nYour email: {self.email}'
 
-    @classmethod
-    def email_exist(cls, email):
-        if email in cls.users_email:
+    @staticmethod
+    def email_exist(email):
+        if email in Registration.users_email:
             raise EmailAlreadyExist
         else:
             return True
-    @classmethod
-    def username_exist(cls, username):
-        if username in cls.usernames:
+
+    @staticmethod
+    def username_exist(username):
+        if username in Registration.usernames:
             raise UsernameAlreadyExist
         else:
             return True
+
 
 class PasswordCheck:
     @staticmethod
@@ -85,4 +89,3 @@ class PasswordCheck:
         except IncorrectLengthPassword:
             print('400\nIncorrectLengthPassword')
             PasswordCheck.password_short_or_long(psw)
-
