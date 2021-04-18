@@ -5,42 +5,47 @@ class Registration:
     USERS = {}
     usernames = []
 
-    def __new__(cls, *args, **kwargs):
-        try:
-            username, email, psw = args
-        except ValueError:
-            return print('400\nValueError')
-        try:
-            cls.email_exist(email)
-        except EmailAlreadyExist:
-            return print('400\nThis email already exist')
-        try:
-            cls.username_exist(username)
-        except UsernameAlreadyExist:
-            return print('400\nThis username already exist')
-        else:
-            try:
-                PasswordCheck.password_check(psw)
-                cls.USERS[email] = psw
-                cls.usernames.append(username)
-                return super().__new__(cls)
-                # return print('200')
-            except TooShortPassword:
-                return print('TooShortPassword')
-            except TooLongPassword:
-                return print('TooLongPassword')
-            except InvalidSymbols:
-                return print('400\nInvalidPassword')
+    # def __new__(cls, *args, **kwargs):
+    #     try:
+    #         username, email, psw = args
+    #     except ValueError:
+    #         return print('400\nValueError')
+    #     try:
+    #         cls.email_exist(email)
+    #     except EmailAlreadyExist:
+    #         return print('400\nThis email already exist')
+    #     try:
+    #         cls.username_exist(username)
+    #     except UsernameAlreadyExist:
+    #         return print('400\nThis username already exist')
+    #     else:
+    #         try:
+    #             PasswordCheck.password_check(psw)
+    #             cls.USERS[email] = psw
+    #             cls.usernames.append(username)
+    #             return super().__new__(cls)
+    #             # return print('200')
+    #         except TooShortPassword:
+    #             return print('TooShortPassword')
+    #         except TooLongPassword:
+    #             return print('TooLongPassword')
+    #         except InvalidSymbols:
+    #             return print('400\nInvalidPassword')
 
-    def __init__(self, username, email, password):
-        self.username = username
-        self.email = email
-        self.psw = password
-        self.data = [self.username, self.email, self.psw]
-        print('200')
+    def __call__(self, username, email, password):
+        self.email_exist(email)
+        self.username_exist(username)
+        PasswordCheck.password_check(password)
+        self.USERS[email] = password
+        self.usernames.append(username)
+        return '200'
 
-    def __str__(self):
-        return f'Your username: {self.username}\nYour email: {self.email}'
+    # def __init__(self, username, email, password):
+    #     self.username = username
+    #     self.email = email
+    #     self.psw = password
+    #     self.data = [self.username, self.email, self.psw]
+    #     print('200')
 
     @staticmethod
     def email_exist(email):
@@ -58,18 +63,24 @@ class Registration:
 
 
 class UserToken:
-    def __new__(cls, *args, **kwargs):
-        try:
-            email, psw = args
-        except ValueError:
-            return print('400\nValueError')
-        if Registration.USERS[email] == psw:
-            return super().__new__(cls)
+    # def __new__(cls, *args, **kwargs):
+    #     try:
+    #         email, psw = args
+    #     except ValueError:
+    #         return print('400\nValueError')
+    #     if Registration.USERS[email] == psw:
+    #         return super().__new__(cls)
+    #     else:
+    #         raise InvalidNameOrPassword
+
+    # def __init__(self, email, password):
+    #     print("Correct")
+
+    def __call__(self, email, password):
+        if Registration.USERS[email] == password:
+            return '200'
         else:
             raise InvalidNameOrPassword
-
-    def __init__(self, email, password):
-        print("Correct")
 
 
 class PasswordCheck:
