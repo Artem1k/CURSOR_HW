@@ -8,7 +8,7 @@ class TestCleanerWork(unittest.TestCase):
         self.cleaner_2 = CleanerWork(50, 35, 200)
         self.cleaner_3 = CleanerWork('75', 110.5, 250.9)
         self.cleaner_4 = CleanerWork('0', 0.0, 0)
-        self.cleaner_5 = CleanerWork(50, 50, 20)
+        self.cleaner_5 = CleanerWork(20, 50, 50)
         self.cleaners = [self.cleaner_1, self.cleaner_2, self.cleaner_3, self.cleaner_4, self.cleaner_5]
 
     def test_init(self):
@@ -35,8 +35,6 @@ class TestCleanerWork(unittest.TestCase):
             self.cleaner_4.wash()
 
     def test_low_battery_check(self):
-        for cleaner in self.cleaners:
-            cleaner.low_battery_check()
         with self.assertRaises(LowBattery):
             self.cleaner_5.low_battery_check()
 
