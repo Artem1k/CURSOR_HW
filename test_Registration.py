@@ -38,10 +38,10 @@ class TestRegistration(unittest.TestCase):
             Registration.email_exist('who@gmail.com')
 
     def test_username_exist(self):
-        self.assertTrue(Registration.email_exist('who'))
-        self.user('who', 'who@gmail.com', '12345678')
+        self.assertTrue(Registration.email_exist('what'))
+        self.user('what', 'what@gmail.com', '12345678')
         with self.assertRaises(UsernameAlreadyExist):
-            Registration.username_exist('who')
+            Registration.username_exist('what')
 
 
 class TestUserToken(unittest.TestCase):
