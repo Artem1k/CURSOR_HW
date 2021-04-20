@@ -52,8 +52,8 @@ class TestUserToken(unittest.TestCase):
         self.user('Maxim', 'maxim@gmail.com', 'ascywegb')
 
     def test_new(self):
-        self.user_token('artemboyko2002@gmail.com', '1234567')
-        self.user_token('maxim@gmail.com', 'ascywegb')
+        print(self.user_token('artemboyko2002@gmail.com', '1234567'))
+        print(self.user_token('maxim@gmail.com', 'ascywegb'))
         with self.assertRaises(KeyError):
             self.user_token('bodya@gmail.com', '1234#%^#567')
         with self.assertRaises(InvalidNameOrPassword):

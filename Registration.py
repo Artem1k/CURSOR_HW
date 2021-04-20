@@ -76,9 +76,12 @@ class UserToken:
     # def __init__(self, email, password):
     #     print("Correct")
 
+    def __init__(self):
+        self.string = '200\nAuthorisation is successful'
+
     def __call__(self, email, password):
         if Registration.USERS[email] == password:
-            return '200'
+            return self
         else:
             raise InvalidNameOrPassword
 
