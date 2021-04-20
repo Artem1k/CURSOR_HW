@@ -81,7 +81,7 @@ class UserToken:
 
     def __call__(self, email, password):
         if Registration.USERS[email] == password:
-            return self
+            return self.string
         else:
             raise InvalidNameOrPassword
 
