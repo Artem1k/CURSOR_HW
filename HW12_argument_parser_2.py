@@ -36,6 +36,9 @@ with open(args.source_file_path, 'r') as f:
         if args.end_salary:
             if float(row['Зарплата.в.месяц']) > float(args.end_salary):
                 continue
+        if args.language:
+            if row["Язык.программирования"] != args.language:
+                continue
         price_list.append(float(row['Зарплата.в.месяц']))
 print(round(sum(price_list) / len(price_list), 2))
 '''

@@ -63,10 +63,10 @@ with open(args.path_to_source_files, 'r') as f:
                 if float(row['current_job_exp']) != float(args.current_job_exp):
                     continue
             if args.age:
-                if float(row['age']) != float(args.age):
+                if float(row["Возраст"]) != float(args.age):
                     continue
             if args.sex:
-                if row['sex'] != args.sex:
+                if row["Пол"] != args.sex:
                     continue
             if args.city:
                 if row['Город'] != args.city:
