@@ -39,6 +39,9 @@ with open(args.source_file_path, 'r') as f:
         price_list.append(float(row['Зарплата.в.месяц']))
 print(round(sum(price_list) / len(price_list), 2))
 '''
-python3 HW12_argument_parser_2.py -f 2020_june_mini.csv -s 12000 
+python3 ~/PycharmProjects/CURSOR_HW/HW12_argument_parser_2.py -f ~/PycharmProjects/CURSOR_HW/2020_june_mini.csv -s 12000 
 14472.22
+python3 ~/PycharmProjects/CURSOR_HW/HW12_argument_parser_2.py -f ~/PycharmProjects/CURSOR_HW/2020_june_mini.csv -s 12000
+ -p 'Senior Software Engineer'
+14666.67
 '''

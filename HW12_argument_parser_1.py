@@ -43,9 +43,15 @@ with open(args.path_to_source_files, 'r') as f:
         del lst_current_job_exp
         f.seek(0)
     with open('new_file.csv', 'w') as new_f:
-        field_names = list(map(lambda x: x.replace('\n', '')[1:-1], next(f).split(',')))
-        writer = csv.DictWriter(new_f, fieldnames=field_names)
-        writer.writeheader()
+        # field_names = list(map(lambda x: x.replace('\n', '')[1:-1], next(f).split(',')))
+        # writer = csv.DictWriter(new_f, fieldnames=field_names)
+        # writer.writeheader()
+        fieldnames = ["N", "Город", "Зарплата.в.месяц", "Изменение.зарплаты.за.12.месяцев", "Должность", "exp",
+                      "current_job_exp", "Язык.программирования", "Специализация", "Возраст", "Пол", "Образование",
+                      "Университет", "Еще.студент", "Уровень.английского", "Размер.компании", "Тип.компании",
+                      "Предметная.область"]
+        writer = csv.DictWriter(new_f, fieldnames=fieldnames)
+        next(f)
         for row in reader:
             if args.position:
                 if row['Должность'] != args.position:
@@ -66,6 +72,7 @@ with open(args.path_to_source_files, 'r') as f:
                 if row['Город'] != args.city:
                     continue
             writer.writerow(row)
-'''python3 HW12_argument_parser_1.py --exp 10 --path_to_source_files 2020_june_mini.csv
-Output: 
+'''python3 ~/PycharmProjects/CURSOR_HW/HW12_argument_parser_1.py --exp 10 --path_to_source_files 
+~/PycharmProjects/CURSOR_HW/2020_june_mini.csv
+Output in new_file.csv
 '''

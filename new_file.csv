@@ -1,0 +1,178 @@
+2,Uzhorod,18000,1,System Architect,10,10,Ruby/Rails,,67,female,Еще студент,КНУСА,True,элементарный,свыше 1000 человек,Продуктовая,"Adtech, Agriculture, AR/VR"
+17,Lviv,10000,0,Director of Engineering / Program Director,10,10,,,41,male,Два высших,Lvivская Политехника,False,продвинутый,до 1000 человек,Аутсорсинговая,Manufacturing
+55,Kyiv,7600,1000,Director of Engineering / Program Director,10,10,,,36,male,Высшее,НТУУ «КПИ»,False,продвинутый,свыше 1000 человек,Аутсорсинговая,Fintech
+58,Dnipro,7500,500,Senior Project manager / Program Manager,10,10,,,40,male,Высшее,,False,выше среднего,до 50 человек,Продуктовая,"Fintech, High Load Systems"
+101,Odessa,7000,0,Director of Engineering / Program Director,10,10,,,44,male,Высшее,ОНПУ,False,продвинутый,до 1000 человек,Аутсорсинговая,"Big Data, Internet of Things, Medtech"
+195,Kharkiv,6000,0,Director of Engineering / Program Director,10,10,,,36,male,Высшее,ХНУРЭ,False,средний,свыше 1000 человек,Аутсорсинговая,Інша
+200,Kyiv,6000,1500,Team/Technical Lead,10,10,Java,,43,male,Высшее,КНУ им. Шевченко,False,продвинутый,до 200 человек,Аутсорсинговая,"Fintech, Legal, Security"
+216,Kyiv,6000,1000,System Architect,10,10,JavaScript,,38,male,Высшее,НТУУ «КПИ»,False,выше среднего,до 50 человек,Продуктовая,"Data Science, E-commerce, Legal"
+226,Kyiv,6000,0,System Architect,10,10,C++,,40,male,Высшее,Other вуз,False,выше среднего,до 50 человек,Продуктовая,"Hardware, High Load Systems, Manufacturing"
+234,Kyiv,5900,0,Director of Engineering / Program Director,10,10,,,36,male,Высшее,КНУ им. Шевченко,False,продвинутый,до 50 человек,Другая,"Automotive, ERP"
+235,Rivne,5900,2500,System Architect,10,10,C#/.NET,,34,male,Высшее,Other вуз,False,выше среднего,до 10 человек,Продуктовая,"E-commerce, ERP, High Load Systems"
+263,Kyiv,5700,500,QA Manager,10,10,,General QA,38,male,Высшее,НТУУ «КПИ»,False,выше среднего,свыше 1000 человек,Аутсорсинговая,"Embedded, Hardware, Telecom"
+264,Lviv,5700,0,Senior Project manager / Program Manager,10,10,,,36,male,Высшее,Lvivская Политехника,False,выше среднего,свыше 1000 человек,Аутсорсинговая,"E-commerce, Fintech"
+290,Lviv,5500,300,System Architect,10,10,C,,46,male,Кандидат,ЛНУ им. Франко,False,выше среднего,до 200 человек,Продуктовая,"Automotive, Embedded"
+312,Kharkiv,5500,0,Team/Technical Lead,10,10,C#/.NET,,48,male,Высшее,НТУУ «КПИ»,False,продвинутый,до 200 человек,Аутсорсинговая,Cloud Computing
+313,Lviv,5500,300,Senior Project manager / Program Manager,10,10,,,42,male,Высшее,Lvivская Политехника,False,выше среднего,свыше 1000 человек,Аутсорсинговая,Embedded
+324,Kyiv,5500,0,QA Manager,10,10,,General QA,30,female,Два высших,НАУ,False,продвинутый,до 200 человек,Аутсорсинговая,Fintech
+342,Dnipro,5450,0,Team/Technical Lead,10,10,C,,35,male,Высшее,ДНУ им. Гончара,False,продвинутый,до 50 человек,Аутстаффинговая,Cloud Computing
+348,Kyiv,5400,750,Team/Technical Lead,10,10,JavaScript,,35,male,Высшее,НТУУ «КПИ»,False,продвинутый,свыше 1000 человек,Аутсорсинговая,"Cloud Computing, E-commerce, High Load Systems"
+355,Kyiv,5320,470,Director of Engineering / Program Director,10,10,,,49,male,Два высших,КНУ им. Шевченко,False,выше среднего,до 200 человек,Продуктовая,"ERP, Insurance, Travel"
+439,Kharkiv,5000,2000,Senior Software Engineer,10,10,C#/.NET,,45,male,Высшее,ХНУРЭ,False,средний,свыше 1000 человек,Аутстаффинговая,"ERP, Fintech"
+459,Kyiv,5000,0,Team/Technical Lead,10,10,C++,,43,male,Высшее,Other вуз,False,выше среднего,до 200 человек,Продуктовая,"Data Science, Machine Learning"
+492,Kharkiv,5000,0,System Architect,10,10,Java,,36,male,Кандидат,НТУ «ХПИ»,False,продвинутый,до 1000 человек,Аутстаффинговая,E-commerce
+524,Odessa,5000,1000,Senior Software Engineer,10,10,PHP,,28,male,Высшее,Other вуз,False,ниже среднего,до 10 человек,Продуктовая,High Load Systems
+527,Kyiv,5000,0,Team/Technical Lead,10,10,Python,,36,male,Высшее,НТУУ «КПИ»,False,продвинутый,до 200 человек,Продуктовая,"Blockchain, Cloud Computing"
+536,Kharkiv,5000,330,Senior Software Engineer,10,10,Java,,34,male,Высшее,ХНУРЭ,False,ниже среднего,до 50 человек,Аутстаффинговая,Travel
+540,Dnipro,5000,1000,System Architect,10,10,PHP,,39,male,Незаконченное высшее,НаУКМА,False,продвинутый,до 10 человек,Другая,"E-commerce, High Load Systems, Media"
+544,Kyiv,5000,500,Senior Software Engineer,10,10,Ruby/Rails,,34,male,Высшее,ДонНТУ,False,выше среднего,до 200 человек,Продуктовая,E-commerce
+546,Lviv,5000,400,Senior Project manager / Program Manager,10,10,,,40,female,Высшее,ЛНУ им. Франко,False,продвинутый,свыше 1000 человек,Аутсорсинговая,Insurance
+558,Kharkiv,5000,0,Team/Technical Lead,10,10,JavaScript,,40,male,Высшее,ХНУРЭ,False,продвинутый,до 10 человек,Другая,"AR/VR, E-commerce"
+607,Kyiv,5000,0,Director of Engineering / Program Director,10,10,,,49,male,Высшее,КНУ им. Шевченко,False,элементарный,до 200 человек,Продуктовая,E-commerce
+634,Lviv,4900,0,Team/Technical Lead,10,10,C++,,44,male,Высшее,ЛНУ им. Франко,False,выше среднего,свыше 1000 человек,Аутстаффинговая,"Automotive, Internet of Things, Robotics"
+636,Kyiv,4900,0,HR,10,10,,,44,male,Высшее,ДонНТУ,False,средний,свыше 1000 человек,Другая,Інша
+683,Lviv,4750,-600,Director of Engineering / Program Director,10,10,,,42,male,Высшее,ЛНУ им. Франко,False,продвинутый,свыше 1000 человек,Аутстаффинговая,"Fintech, Travel"
+702,Kyiv,4750,0,Director of Engineering / Program Director,10,10,,,33,male,Высшее,НТУУ «КПИ»,False,выше среднего,до 50 человек,Аутсорсинговая,"E-commerce, ERP, Media"
+717,Kyiv,4700,200,Senior Project manager / Program Manager,10,10,,,60,male,Кандидат,НТУУ «КПИ»,False,выше среднего,до 50 человек,Аутстаффинговая,Інша
+718,Черкассы,4700,600,Team/Technical Lead,10,10,Java,,33,male,Высшее,Other вуз,False,средний,до 1000 человек,Аутсорсинговая,"E-commerce, Telecom"
+750,Lviv,4655,100,Team/Technical Lead,10,10,Java,,32,male,Высшее,Lvivская Политехника,False,выше среднего,свыше 1000 человек,Аутсорсинговая,Інша
+778,Kyiv,4600,-400,Senior Software Engineer,10,10,PHP,,34,male,Высшее,КНУ им. Шевченко,False,средний,до 50 человек,Аутсорсинговая,Big Data
+780,Chernivtsi,4600,0,Team/Technical Lead,10,10,Java,,37,male,Высшее,ЧНУ им. Федьковича,False,выше среднего,свыше 1000 человек,Аутсорсинговая,"E-commerce, Manufacturing"
+788,Kyiv,4560,300,Project manager,10,10,,,35,male,Высшее,НТУУ «КПИ»,False,продвинутый,свыше 1000 человек,Аутсорсинговая,"Cloud Computing, Fintech"
+791,Lviv,4560,0,Team/Technical Lead,10,10,Python,,37,male,Два высших,Lvivская Политехника,False,выше среднего,до 200 человек,Аутсорсинговая,"Data Science, Internet of Things, Machine Learning"
+808,Kharkiv,4500,0,Senior Software Engineer,10,10,TypeScript,,31,male,Высшее,Other вуз,False,выше среднего,свыше 1000 человек,Аутстаффинговая,"Big Data, Cloud Computing, Fintech"
+816,Kharkiv,4500,200,Team/Technical Lead,10,10,C#/.NET,,40,male,Высшее,ХНУРЭ,False,выше среднего,свыше 1000 человек,Аутсорсинговая,ERP
+836,Kyiv,4500,-300,Senior Project manager / Program Manager,10,10,,,34,male,Высшее,КНУ им. Шевченко,False,выше среднего,свыше 1000 человек,Аутсорсинговая,Telecom
+846,Kyiv,4500,300,Team/Technical Lead,10,10,C++,,37,male,Высшее,ДНУ им. Гончара,False,продвинутый,до 1000 человек,Аутсорсинговая,Security
+966,Dnipro,4500,0,Team/Technical Lead,10,10,C++,,38,male,Высшее,,False,выше среднего,до 1000 человек,Аутсорсинговая,Security
+969,Kyiv,4500,0,Senior Software Engineer,10,10,SQL,,42,male,Высшее,НТУУ «КПИ»,False,продвинутый,до 1000 человек,Продуктовая,"ERP, High Load Systems, Інша"
+1052,Lviv,4400,200,Team/Technical Lead,10,10,JavaScript,,39,male,Высшее,КНУ им. Шевченко,False,средний,свыше 1000 человек,Аутсорсинговая,Інша
+1063,Lviv,4400,1000,Marketing,10,10,,,31,female,Высшее,Other вуз,False,продвинутый,свыше 1000 человек,Аутсорсинговая,Інша
+1066,Kharkiv,4370,0,Team/Technical Lead,10,10,C#/.NET,,35,male,Высшее,ХАИ,False,выше среднего,до 1000 человек,Аутсорсинговая,Інша
+1111,Lviv,4300,100,Senior Software Engineer,10,10,C#/.NET,,38,male,Высшее,ЛНУ им. Франко,False,выше среднего,до 1000 человек,Аутстаффинговая,Fintech
+1119,Kyiv,4300,400,System Architect,10,10,C++,,34,male,Высшее,НАУ,False,средний,до 200 человек,Продуктовая,Medtech
+1165,Kyiv,4236,36,Senior Software Engineer,10,10,Java,,46,male,Высшее,НТУУ «КПИ»,False,средний,свыше 1000 человек,Аутсорсинговая,Fintech
+1180,Kyiv,4200,400,Team/Technical Lead,10,10,Java,,36,male,Два высших,НАУ,False,ниже среднего,до 200 человек,Продуктовая,"Mobile, Інша"
+1185,Vinnytsia,4200,0,Team/Technical Lead,10,10,Java,,35,male,Высшее,ВНТУ,False,продвинутый,свыше 1000 человек,Аутсорсинговая,E-commerce
+1226,Odessa,4200,0,Team/Technical Lead,10,10,C++,,39,male,Высшее,ОНПУ,False,выше среднего,свыше 1000 человек,Аутсорсинговая,Automotive
+1246,Kyiv,4180,200,Senior Project manager / Program Manager,10,10,,,37,male,Высшее,НаУКМА,False,продвинутый,до 10 человек,Аутсорсинговая,"E-commerce, Manufacturing"
+1247,Lviv,4180,150,Senior Software Engineer,10,10,Java,,34,male,Высшее,Other вуз,False,выше среднего,свыше 1000 человек,Аутсорсинговая,Automotive
+1265,Kyiv,4100,0,Team/Technical Lead,10,10,C#/.NET,,44,male,Высшее,НТУУ «КПИ»,False,выше среднего,свыше 1000 человек,Аутсорсинговая,Legal
+1301,Kyiv,4085,400,Senior Software Engineer,10,10,PHP,,39,male,Высшее,ЧГУ им. Петра Могилы,False,выше среднего,до 200 человек,Аутстаффинговая,Media
+1325,Dnipro,4000,0,Senior Software Engineer,10,10,C#/.NET,,37,male,Высшее,ДНУ им. Гончара,False,выше среднего,до 200 человек,Продуктовая,"Cloud Computing, E-commerce, Media"
+1382,Запорожье,4000,1800,Senior Software Engineer,10,10,Java,,40,male,Высшее,ЗНТУ,False,средний,до 50 человек,Продуктовая,Adtech
+1406,Kyiv,4000,200,Team/Technical Lead,10,10,C#/.NET,,32,male,Высшее,НТУУ «КПИ»,False,выше среднего,свыше 1000 человек,Аутсорсинговая,ERP
+1469,Lviv,4000,100,Director of Engineering / Program Director,10,10,,,42,male,Два высших,ЛНУ им. Франко,False,продвинутый,свыше 1000 человек,Аутсорсинговая,"Automotive, Fintech, Gambling"
+1478,Kyiv,4000,100,Senior Software Engineer,10,10,C#/.NET,,38,male,Высшее,Other вуз,False,продвинутый,до 1000 человек,Продуктовая,Інша
+1560,Kyiv,4000,1000,Business analyst,10,10,,,37,male,Незаконченное высшее,,False,средний,до 10 человек,Другая,"E-commerce, ERP, Інша"
+1621,Kyiv,4000,0,Senior Project manager / Program Manager,10,10,,,37,male,Высшее,НАУ,False,выше среднего,свыше 1000 человек,Аутсорсинговая,"Cloud Computing, ERP, Telecom"
+1631,Kharkiv,4000,0,Senior Software Engineer,10,10,C#/.NET,,42,male,Высшее,Other вуз,False,выше среднего,свыше 1000 человек,Аутсорсинговая,E-commerce
+1677,Kyiv,3900,0,Team/Technical Lead,10,10,PHP,,35,male,Незаконченное высшее,НТУУ «КПИ»,False,выше среднего,до 10 человек,Продуктовая,"Adtech, Automotive"
+1694,Kharkiv,3900,0,System Architect,10,10,Java,,50,male,Высшее,Other вуз,False,средний,до 1000 человек,Продуктовая,"E-commerce, Fintech"
+1719,Vinnytsia,3900,300,Team/Technical Lead,10,10,Java,,33,male,Высшее,ДонНТУ,False,выше среднего,до 200 человек,Аутсорсинговая,"Big Data, Cloud Computing, Fintech"
+1725,Kharkiv,3850,0,Team/Technical Lead,10,10,Java,,35,male,Высшее,ХАИ,False,выше среднего,свыше 1000 человек,Аутстаффинговая,E-commerce
+1773,Kharkiv,3800,2000,Team/Technical Lead,10,10,PHP,,44,male,Высшее,НТУ «ХПИ»,False,выше среднего,до 200 человек,Аутстаффинговая,Fintech
+1796,Kyiv,3800,0,Senior Software Engineer,10,10,Java,,42,male,Незаконченное высшее,НТУУ «КПИ»,False,ниже среднего,до 50 человек,Продуктовая,Logistics
+2046,Kharkiv,3600,300,Team/Technical Lead,10,10,PHP,,35,male,Высшее,ХНУРЭ,False,выше среднего,до 200 человек,Аутстаффинговая,E-commerce
+2074,Kyiv,3600,0,Team/Technical Lead,10,10,Other,,41,male,Высшее,ЗНТУ,False,продвинутый,до 50 человек,Стартап,Інша
+2109,Запорожье,3500,0,Senior Software Engineer,10,10,JavaScript,,32,male,Высшее,ЗНТУ,False,продвинутый,свыше 1000 человек,Продуктовая,Machine Learning
+2147,Dnipro,3500,1000,Senior Software Engineer,10,10,Java,,37,male,Высшее,НГУ [Dniproопетровск],False,средний,свыше 1000 человек,Аутсорсинговая,"Data Science, Insurance, Machine Learning"
+2164,Kharkiv,3500,150,Senior Project manager / Program Manager,10,10,,,30,female,Высшее,НТУ «ХПИ»,False,продвинутый,свыше 1000 человек,Аутсорсинговая,Insurance
+2181,Dnipro,3500,200,Software Engineer,10,10,Java,,44,male,Высшее,ДНУ им. Гончара,False,средний,до 50 человек,Продуктовая,"High Load Systems, Інша"
+2215,Kyiv,3500,1000,Software Engineer,10,10,1С,,33,male,Высшее,НУПТ,False,элементарный,до 1000 человек,Другая,ERP
+2245,Kharkiv,3500,200,QA Manager,10,10,,General QA,44,male,Высшее,НТУ «ХПИ»,False,продвинутый,свыше 1000 человек,Аутсорсинговая,Medtech
+2307,Kyiv,3500,0,Project manager,10,10,,,38,male,Высшее,НТУУ «КПИ»,False,выше среднего,до 50 человек,Продуктовая,"ERP, Geospatial, Manufacturing"
+2321,Lviv,3500,300,Team/Technical Lead,10,10,C,,42,male,Высшее,НТУУ «КПИ»,False,выше среднего,до 200 человек,Аутстаффинговая,Embedded
+2332,Lviv,3500,-400,HR,10,10,,,44,female,Высшее,ЛНУ им. Франко,False,выше среднего,свыше 1000 человек,Аутсорсинговая,"Automotive, Fintech, Telecom"
+2362,Lviv,3500,200,Senior Software Engineer,10,10,Java,,36,male,Высшее,Lvivская Политехника,False,выше среднего,свыше 1000 человек,Аутсорсинговая,"Big Data, Cloud Computing, Fintech"
+2372,Lviv,3500,150,QA Tech Lead,10,10,,Automation QA,35,male,Высшее,ЧНУ им. Федьковича,False,выше среднего,свыше 1000 человек,Аутсорсинговая,Security
+2406,Kyiv,3500,200,Senior QA engineer,10,10,,Manual QA,43,male,Высшее,КНЭУ,False,средний,до 10 человек,Аутсорсинговая,E-commerce
+2415,Kyiv,3450,300,Senior Software Engineer,10,10,Java,,31,male,Высшее,Other вуз,False,выше среднего,свыше 1000 человек,Аутсорсинговая,"ERP, Security"
+2451,Kyiv,3400,400,Project manager,10,10,,,37,female,Высшее,Other вуз,False,выше среднего,свыше 1000 человек,Аутсорсинговая,Media
+2454,Kyiv,3400,0,Senior Project manager / Program Manager,10,10,,,31,male,Высшее,НУК,False,выше среднего,до 1000 человек,Аутсорсинговая,"Adtech, E-commerce"
+2500,Kharkiv,3350,200,Senior Software Engineer,10,10,Java,,37,male,Высшее,ХАИ,False,выше среднего,до 10 человек,Аутстаффинговая,Logistics
+2591,Lviv,3300,25,Senior Software Engineer,10,10,PHP,,50,female,Высшее,ЛНУ им. Франко,False,средний,до 10 человек,Другая,E-commerce
+2612,Kyiv,3300,0,Senior QA engineer,10,10,,Automation QA,34,male,Высшее,НАУ,False,средний,до 50 человек,Продуктовая,"Big Data, ERP"
+2635,Kyiv,3300,0,QA Tech Lead,10,10,,General QA,36,male,Высшее,НАУ,False,продвинутый,свыше 1000 человек,Аутсорсинговая,Embedded
+2638,Kyiv,3300,0,Team/Technical Lead,10,10,SQL,,34,male,Высшее,НТУУ «КПИ»,False,выше среднего,свыше 1000 человек,Аутсорсинговая,"ERP, Media"
+2678,Vinnytsia,3220,200,Senior Software Engineer,10,10,C#/.NET,,31,male,Кандидат,ВНТУ,False,выше среднего,до 50 человек,Другая,Fintech
+2688,Хмельницкий,3200,0,Team/Technical Lead,10,10,C++,,32,male,Высшее,ХНУ [г. Хмельницкий],False,средний,до 50 человек,Продуктовая,Telecom
+2759,Kharkiv,3200,200,Senior Software Engineer,10,10,Java,,37,male,Высшее,НТУ «ХПИ»,False,продвинутый,до 200 человек,Аутсорсинговая,Fintech
+2812,Dnipro,3180,-350,HR,10,10,,,51,female,Высшее,ДНУ им. Гончара,False,средний,до 1000 человек,Аутсорсинговая,"AR/VR, Manufacturing, Robotics"
+2821,Other,3150,100,Senior Software Engineer,10,10,JavaScript,,38,male,Два высших,КНУ им. Шевченко,False,выше среднего,до 1000 человек,Аутстаффинговая,Travel
+2861,Lviv,3100,-200,Senior Software Engineer,10,10,C#/.NET,,40,male,Высшее,ЛНУ им. Франко,False,выше среднего,свыше 1000 человек,Аутсорсинговая,Інша
+2872,Dnipro,3100,100,Senior Project manager / Program Manager,10,10,,,33,male,Высшее,Other вуз,False,выше среднего,до 1000 человек,Продуктовая,Medtech
+2914,Kyiv,3050,0,Senior QA engineer,10,10,,Automation QA,48,male,Высшее,ДонНУ им. Васыля Стуса,False,выше среднего,до 1000 человек,Аутсорсинговая,Інша
+3104,Lviv,3000,0,Senior Software Engineer,10,10,C,,36,male,Высшее,Lvivская Политехника,False,выше среднего,до 50 человек,Продуктовая,Embedded
+3137,Odessa,3000,0,Senior Software Engineer,10,10,Java,,36,female,Высшее,Other вуз,False,выше среднего,до 200 человек,Продуктовая,Fintech
+3144,Dnipro,3000,0,Team/Technical Lead,10,10,1С,,37,male,Высшее,Other вуз,False,ниже среднего,до 10 человек,Другая,ERP
+3266,Odessa,3000,1000,Designer,10,10,,,35,female,Высшее,ЧГУ им. Петра Могилы,False,продвинутый,до 10 человек,Другая,Gambling
+3338,Dnipro,3000,0,Senior Software Engineer,10,10,Kotlin,,34,male,Высшее,ДНУЖТ,False,выше среднего,до 50 человек,Продуктовая,"Gambling, GameDev"
+3358,Vinnytsia,3000,0,Director of Engineering / Program Director,10,10,,,36,male,Высшее,ВНТУ,False,средний,до 50 человек,Другая,Cloud Computing
+3383,Lviv,2995,500,Senior Software Engineer,10,10,C#/.NET,,32,male,Высшее,Lvivская Политехника,False,выше среднего,свыше 1000 человек,Аутсорсинговая,"Insurance, Medtech"
+3392,Kropyvnytskyi,2950,0,Director of Engineering / Program Director,10,10,,,40,male,Высшее,Other вуз,False,выше среднего,до 1000 человек,Аутсорсинговая,"AR/VR, Mobile, Інша"
+3395,Kharkiv,2950,0,Senior QA engineer,10,10,,Automation QA,35,male,Высшее,ХНУРЭ,False,средний,до 1000 человек,Продуктовая,"Cloud Computing, ERP, Telecom"
+3423,Kharkiv,2900,200,Product Manager,10,10,,,45,male,Высшее,НТУ «ХПИ»,False,средний,до 200 человек,Продуктовая,Інша
+3431,Vinnytsia,2900,-100,Senior Software Engineer,10,10,Swift,,41,male,Высшее,ВНТУ,False,средний,до 50 человек,Продуктовая,"AR/VR, Mobile"
+3780,Kharkiv,2700,150,Senior Software Engineer,10,10,Other,,35,male,Два высших,ХНУРЭ,False,выше среднего,до 200 человек,Аутстаффинговая,"E-commerce, Інша"
+3803,Lviv,2700,0,Software Engineer,10,10,JavaScript,,48,male,Высшее,Lvivская Политехника,False,средний,свыше 1000 человек,Аутсорсинговая,"Agriculture, Data Science, E-commerce"
+3865,Chernivtsi,2650,90,Team/Technical Lead,10,10,Java,,34,male,Высшее,ЧНУ им. Федьковича,False,выше среднего,до 200 человек,Аутсорсинговая,Medtech
+3992,Lviv,2600,250,Software Engineer,10,10,JavaScript,,34,male,Высшее,Lvivская Политехника,False,продвинутый,до 200 человек,Аутсорсинговая,Інша
+4021,Dnipro,2570,0,Senior Software Engineer,10,10,C#/.NET,,39,male,Высшее,ДНУЖТ,False,средний,до 50 человек,Аутсорсинговая,Інша
+4028,Мариуполь,2550,-450,Senior Software Engineer,10,10,Java,,32,male,Высшее,,False,средний,до 1000 человек,Аутсорсинговая,Mobile
+4043,Dnipro,2500,0,Team/Technical Lead,10,10,Delphi,,42,male,Высшее,ДонНТУ,False,средний,до 50 человек,Другая,"Big Data, ERP"
+4153,Other,2500,0,Project manager,10,10,,,43,male,Два высших,ДонНУ им. Васыля Стуса,False,выше среднего,до 50 человек,Аутсорсинговая,"ERP, Mobile, Інша"
+4188,Kyiv,2500,750,Senior Software Engineer,10,10,1С,,43,male,Высшее,Other вуз,False,ниже среднего,до 10 человек,Продуктовая,ERP
+4324,Kyiv,2500,0,Director of Engineering / Program Director,10,10,,,42,male,Высшее,ЧНТУ,False,ниже среднего,до 50 человек,Продуктовая,ERP
+4369,Kharkiv,2500,0,Senior Software Engineer,10,10,Java,,46,male,Высшее,ХАИ,False,средний,до 200 человек,Аутсорсинговая,Telecom
+4382,Kharkiv,2500,75,Senior QA engineer,10,10,,Manual QA,34,female,Высшее,ХНУРЭ,False,средний,до 200 человек,Продуктовая,"Big Data, Medtech"
+4429,Полтава,2500,500,Product Manager,10,10,,,36,male,Высшее,ВНУ им. Даля,False,выше среднего,до 10 человек,Продуктовая,GameDev
+4483,Kyiv,2500,500,Team/Technical Lead,10,10,TypeScript,,33,male,Высшее,НТУУ «КПИ»,False,средний,до 1000 человек,Продуктовая,Telecom
+4632,Kyiv,2400,200,Team/Technical Lead,10,10,JavaScript,,32,male,Высшее,Other вуз,False,средний,до 10 человек,Другая,E-commerce
+4738,Vinnytsia,2300,0,Team/Technical Lead,10,10,TypeScript,,32,male,Два высших,ВНТУ,False,средний,до 1000 человек,Аутсорсинговая,Gambling
+5179,Kyiv,2100,300,Senior Software Engineer,10,10,Delphi,,37,male,Высшее,НТУУ «КПИ»,False,ниже среднего,до 50 человек,Продуктовая,"Embedded, Internet of Things, Manufacturing"
+5247,Lviv,2100,0,Senior QA engineer,10,10,,Manual QA,35,female,Высшее,Lvivская Политехника,False,средний,свыше 1000 человек,Аутсорсинговая,Інша
+5292,Kyiv,2050,250,Software Engineer,10,10,Java,,33,female,Высшее,КНУ им. Шевченко,False,выше среднего,до 1000 человек,Продуктовая,GameDev
+5349,Kyiv,2000,100,Software Engineer,10,10,1С,,40,male,Высшее,НТУУ «КПИ»,False,средний,до 10 человек,Аутсорсинговая,ERP
+5376,Хмельницкий,2000,0,Team/Technical Lead,10,10,TypeScript,,33,male,Среднее,,False,выше среднего,до 10 человек,Продуктовая,Embedded
+5401,Kyiv,2000,0,System Architect,10,10,C#/.NET,,47,male,Два высших,КНУ им. Шевченко,False,выше среднего,свыше 1000 человек,Другая,Інша
+5546,Kyiv,2000,0,SysAdmin,10,10,,,42,male,Два высших,НТУУ «КПИ»,False,средний,до 1000 человек,Продуктовая,"Cloud Computing, Internet of Things, Security"
+5655,Kyiv,2000,300,Business analyst,10,10,,,36,female,Высшее,НТУУ «КПИ»,False,ниже среднего,до 1000 человек,Продуктовая,Telecom
+5702,Kyiv,2000,200,Senior Software Engineer,10,10,C++,,54,male,Высшее,Other вуз,False,средний,до 50 человек,Продуктовая,"Manufacturing, Інша"
+5787,Kharkiv,2000,140,Software Engineer,10,10,C#/.NET,,44,female,Высшее,ХНУРЭ,False,средний,свыше 1000 человек,Аутсорсинговая,"ERP, Medtech"
+5831,Dnipro,2000,500,Team/Technical Lead,10,10,PHP,,32,male,Высшее,Other вуз,False,выше среднего,до 10 человек,Другая,Інша
+5834,Херсон,2000,0,Team/Technical Lead,10,10,Python,,35,male,Высшее,Other вуз,False,ниже среднего,до 50 человек,Продуктовая,E-commerce
+5840,Kyiv,2000,0,Software Engineer,10,10,PHP,,40,male,Высшее,КНУ им. Шевченко,False,ниже среднего,до 10 человек,Продуктовая,"Blockchain, ERP, Інша"
+5877,Kyiv,1960,250,Software Engineer,10,10,Delphi,,32,female,Кандидат,НТУУ «КПИ»,False,продвинутый,до 50 человек,Другая,Fintech
+5939,Kyiv,1900,-200,Senior Software Engineer,10,10,C++,,49,female,Высшее,КНУ им. Шевченко,False,средний,до 10 человек,Аутсорсинговая,Інша
+6012,Запорожье,1900,0,Software Engineer,10,10,C#/.NET,,37,male,Техникум / Колледж,Other вуз,False,выше среднего,до 50 человек,Продуктовая,"Embedded, Hardware, Інша"
+6177,Dnipro,1800,0,Software Engineer,10,10,Java,,41,male,Техникум / Колледж,,False,средний,до 1000 человек,Продуктовая,Medtech
+6229,Kharkiv,1800,0,Team/Technical Lead,10,10,C#/.NET,,41,male,Высшее,ХНУРЭ,False,средний,до 50 человек,Продуктовая,ERP
+6235,Kyiv,1800,400,Software Engineer,10,10,SQL,,48,male,Кандидат,НТУУ «КПИ»,False,средний,до 10 человек,Продуктовая,"Fintech, Telecom"
+6259,Kyiv,1800,0,Software Engineer,10,10,Other,,44,male,Высшее,НТУУ «КПИ»,False,средний,до 50 человек,Другая,Інша
+6355,Тернополь,1750,150,Senior Software Engineer,10,10,PHP,,39,male,Высшее,Other вуз,False,выше среднего,до 10 человек,Аутсорсинговая,Edtech
+6453,Odessa,1700,200,Team/Technical Lead,10,10,PHP,,35,male,Высшее,ОНПУ,False,средний,до 10 человек,Продуктовая,Telecom
+6970,Dnipro,1500,180,Senior Software Engineer,10,10,1С,,45,male,Высшее,ДНУ им. Гончара,False,ниже среднего,до 10 человек,Другая,Agriculture
+7072,Dnipro,1500,200,Senior Software Engineer,10,10,1С,,46,male,Высшее,ХНУ им. Каразина,False,ниже среднего,до 50 человек,Продуктовая,"Agriculture, ERP"
+7086,Kharkiv,1500,0,Project manager,10,10,,,32,female,Высшее,ХНУ им. Каразина,False,выше среднего,до 1000 человек,Аутсорсинговая,Geospatial
+7109,Запорожье,1500,300,Software Engineer,10,10,C#/.NET,,39,male,Высшее,ДНУ им. Гончара,False,выше среднего,до 50 человек,Аутстаффинговая,"E-commerce, ERP"
+7135,Dnipro,1500,-300,Software Engineer,10,10,JavaScript,,36,male,Высшее,НметАУ,False,ниже среднего,до 50 человек,Продуктовая,GameDev
+7556,Dnipro,1400,0,Software Engineer,10,10,SQL,,36,male,Высшее,ДНУЖТ,False,средний,до 1000 человек,Другая,Fintech
+7657,Other,1350,150,Product Manager,10,10,,,35,male,Высшее,Other вуз,False,средний,до 10 человек,Продуктовая,Medtech
+7665,Chernivtsi,1350,200,HR,10,10,,,49,male,Высшее,Other вуз,False,ниже среднего,до 200 человек,Аутсорсинговая,Інша
+7764,Lviv,1300,200,Data Analyst,10,10,,,40,male,Высшее,Lvivская Политехника,False,элементарный,до 10 человек,Другая,"Big Data, Data Science, Logistics"
+7801,Житомир,1300,0,Software Engineer,10,10,Java,,35,male,Незаконченное высшее,ЖГТУ,False,выше среднего,до 10 человек,Продуктовая,E-commerce
+8305,Kyiv,1200,-300,Senior Software Engineer,10,10,Java,,28,male,Кандидат,ЧНУ им. Федьковича,False,продвинутый,до 10 человек,Аутсорсинговая,"AR/VR, Edtech, Geospatial"
+8441,Kharkiv,1100,0,Senior Software Engineer,10,10,1С,,43,male,Высшее,Other вуз,False,средний,до 10 человек,Другая,Інша
+8774,Сумы,1000,0,QA Tech Lead,10,10,,Manual QA,33,female,Высшее,СумГУ,False,выше среднего,свыше 1000 человек,Продуктовая,Telecom
+8840,Lviv,1000,0,DevOps,10,10,,,39,male,Высшее,Other вуз,False,средний,до 10 человек,Другая,"Cloud Computing, ERP, Telecom"
+8947,Kyiv,1000,300,Support,10,10,,,33,male,Среднее,,False,средний,до 50 человек,Аутстаффинговая,Insurance
+9028,Mykolaiv,1000,0,Software Engineer,10,10,C++,,65,male,Высшее,Other вуз,False,элементарный,до 50 человек,Другая,Manufacturing
+9145,Kyiv,1000,100,System Analyst,10,10,,,46,male,Высшее,ХНУ [г. Хмельницкий],False,ниже среднего,свыше 1000 человек,Аутсорсинговая,Telecom
+9214,Kyiv,950,0,SysAdmin,10,10,,,32,male,Высшее,НАУ,False,элементарный,до 10 человек,Аутсорсинговая,"Hardware, Інша"
+9337,Kyiv,900,-220,SysAdmin,10,10,,,32,male,Высшее,ГУТ,False,ниже среднего,до 10 человек,Другая,Media
+9426,Kyiv,900,100,SysAdmin,10,10,,,37,male,Незаконченное высшее,СумГУ,False,ниже среднего,до 10 человек,Другая,Інша
+9942,Kyiv,800,-200,QA Engineer,10,10,,Automation QA,48,male,Высшее,НТУУ «КПИ»,False,ниже среднего,до 10 человек,Другая,"Automotive, Big Data, E-commerce"
+10024,Other,780,-200,SysAdmin,10,10,,,54,male,Высшее,ХНУРЭ,False,элементарный,до 10 человек,Другая,"Medtech, Інша"
+10256,Kharkiv,700,0,Data Engineer,10,10,,,38,male,Два высших,ХНУ им. Каразина,False,средний,свыше 1000 человек,Аутсорсинговая,Інша
+10343,Кривой Рог,700,50,Software Engineer,10,10,Other,,61,male,Высшее,Other вуз,False,элементарный,до 10 человек,Другая,Manufacturing
