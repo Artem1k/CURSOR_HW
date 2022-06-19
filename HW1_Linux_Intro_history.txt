@@ -1,0 +1,38 @@
+   39  cd Documents/
+   40  ll
+   41  pwd
+   46  mkdir cursor && touch test.txt
+   47  ls
+   48  cp test.txt cursor/
+   49  ls cursor/
+   50  ll
+   51  ls --help
+   52  ls -lar
+   53  ls -lar ~
+   54  mv test.txt new_test.txt
+   55  ls
+   56  rm -r cursor new_test.txt 
+   57  touch --help
+   58  mkdir cursor
+   63  cd cursor/
+   64  touch hw.txt
+   65  cd ..
+   83  touch -t 202001010415.00 hw.txt 
+   84  stat hw.txt 
+   85  touch hw.sh, hw1.sh, hw2.sh, hw1.txt
+   86  ls
+   87  ls | grep .sh
+   89  mkdir new_dir
+   90  cp *.txt new_dir/
+   91  echo cursor > hw.txt 
+   92  cat hw.txt 
+   94  chmod u-rwx hw.txt 
+   95  cat hw.txt 
+   96  sudo cat hw.txt 
+   97  chmod u+rwx hw.txt 
+   98  cat hw.txt 
+  105  nano hw.txt 
+  106  cat hw.txt | head -7
+  107  ls
+  112  echo "echo Hello" > test.sh
+  114  bash test.sh 

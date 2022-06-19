@@ -1,0 +1,159 @@
+1. Create `cursor` directory and test.txt file
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~$ cd Documents/
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ ll
+total 8
+drwxr-xr-x  2 artem artem 4096 лют 17 21:14 ./
+drwxr-xr-x 18 artem artem 4096 лют 17 16:52 ../
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ mkdir cursor && touch test.txt
+
+2. Copy test.txt file to cursor directory
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ cp test.txt cursor/
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ ls cursor/
+test.txt
+
+3. List the files in the current directory, in “long listing format”
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ ls -lar
+total 12
+-rw-rw-r--  1 artem artem    0 лют 18 22:08 test.txt
+drwxrwxr-x  2 artem artem 4096 лют 18 22:08 cursor
+drwxr-xr-x 18 artem artem 4096 лют 17 16:52 ..
+drwxr-xr-x  3 artem artem 4096 лют 18 22:08 .
+
+4. List all files, including hidden files, in the your home (~) directory, in reverse alphabetical order and long listing format.
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ ls -lar ~
+total 88
+drwxr-xr-x  2 artem artem 4096 лют 17 05:38 Videos
+drwxr-xr-x  2 artem artem 4096 лют 17 05:38 Templates
+-rw-r--r--  1 artem artem    0 лют 17 16:44 .sudo_as_admin_successful
+drwx------  2 artem artem 4096 лют 17 16:52 .ssh
+drwxr-xr-x  6 artem artem 4096 лют 17 15:24 snap
+drwxr-xr-x  2 artem artem 4096 лют 17 05:38 Public
+-rw-r--r--  1 artem artem  807 лют 17 03:30 .profile
+drwx------  3 artem artem 4096 лют 17 14:45 .pki
+drwxr-xr-x  2 artem artem 4096 лют 17 05:38 Pictures
+drwxr-xr-x  2 artem artem 4096 лют 17 05:38 Music
+drwx------  5 artem artem 4096 лют 17 14:45 .mozilla
+drwxr-xr-x  3 artem artem 4096 лют 17 05:38 .local
+drwx------  3 artem artem 4096 лют 17 16:52 .gnupg
+drwxr-xr-x  2 artem artem 4096 лют 17 05:38 Downloads
+drwxr-xr-x  3 artem artem 4096 лют 18 22:08 Documents
+drwxr-xr-x  2 artem artem 4096 лют 17 05:38 Desktop
+drwx------ 15 artem artem 4096 лют 17 16:52 .config
+drwxr-xr-x 17 artem artem 4096 лют 17 22:13 .cache
+-rw-r--r--  1 artem artem 3771 лют 17 03:30 .bashrc
+-rw-r--r--  1 artem artem  220 лют 17 03:30 .bash_logout
+-rw-------  1 artem artem  349 лют 17 23:10 .bash_history
+drwxr-xr-x  3 root  root  4096 лют 17 03:30 ..
+drwxr-xr-x 18 artem artem 4096 лют 17 16:52 .
+
+
+5*. Rename the file test.txt to new_test.txt
+Hint: Renaming is done using the same command as moving.
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ mv test.txt new_test.txt
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ ls
+cursor  new_test.txt
+
+6. Delete the files cursor/test.txt and new_test.txt. Note that your answer must be a single command and not multiple commands.
+Hint: Many commands can accept more than one parameter.
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ rm cursor/test.txt new_test.txt 
+
+Create hw.txt file under cursor directory
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ cd cursor/
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ touch hw.txt
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ cd ..
+
+7*. Set the file hw.txt to have a last-modified date of January 1, 2020, 4:15am.
+Hint: The man page for the proper command describes the timestamp 'STAMP' format to use. Look for this!
+Also note: Linux is case-sensitive when you are specifying file or directory names.
+You can use a * (asterisk) as a “wild-card” character to specify a group of files.
+For example, *foo means all files whose names end with foo, and foo* means all files whose names begin with foo.
+You can use a wildcard in the middle of a file name, such as foo*bar for all files that start with foo and end with bar.
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ touch -t 202001010415.00 hw.txt 
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ stat hw.txt 
+  File: hw.txt
+  Size: 0         	Blocks: 0          IO Block: 4096   regular empty file
+Device: 10306h/66310d	Inode: 1708969     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/   artem)   Gid: ( 1000/   artem)
+Access: 2020-01-01 04:15:00.000000000 +0200
+Modify: 2020-01-01 04:15:00.000000000 +0200
+Change: 2021-02-18 23:39:40.705993873 +0200
+ Birth: -
+
+ Create hw.sh, hw1.sh, hw2.sh, hw1.txt under the cursor directory
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ touch hw.sh, hw1.sh, hw2.sh, hw1.txt
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ ls
+hw1.sh,  hw1.txt  hw2.sh,  hw.sh,  hw.txt
+
+8. List all web page files (only with the extension .sh) in the current directory.
+Note that the ls command can accept more than one parameter for what files you want it to list.
+Hint: Use grep
+
+Did after completion
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ ls | grep *.sh
+test.sh
+
+9. Copy all the text files (files whose names end with .txt) from the current folder to the new directory.
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ mkdir new_dir
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ cp *.txt new_dir/
+
+10. Write `cursor` to the hw.txt file by using echo.
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ echo cursor > hw.txt 
+
+11. Display the contents of hw.txt
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ cat hw.txt 
+cursor
+
+12. Change the permissions to 0 for current user and try to Display contents again.
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ chmod u-rwx hw.txt 
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ cat hw.txt 
+cat: hw.txt: Permission denied
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ sudo cat hw.txt 
+[sudo] password for artem: 
+cursor
+
+13. Change the permission to rwx for current user only and try again.
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ chmod u+rwx hw.txt 
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ cat hw.txt 
+cursor
+
+14. Write from 1 to 10 in each line in hw.txt by using text reader.
+🔍 Self Discovery: The head and tail commands output only the first or last few lines (respectively) of a file to the terminal.
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ nano hw.txt
+
+15. Display only the first 7 lines of the file hw.txt from the current directory on the terminal.
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ cat hw.txt | head -7
+1
+2
+3
+4
+5
+6
+7
+
+16*. Create test.sh with echo 'Hello' and make it executable
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ ls
+hw1.sh,  hw1.txt  hw2.sh,  hw.sh,  hw.txt  new_dir
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ echo "echo Hello" > test.sh
+
+17*. Execute test.sh
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ bash test.sh 
+Hello

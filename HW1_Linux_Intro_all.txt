@@ -1,0 +1,485 @@
+artem@artem-IdeaPad-L340-15IRH-Gaming:~$ cd Documents/
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ ll
+total 8
+drwxr-xr-x  2 artem artem 4096 лют 17 21:14 ./
+drwxr-xr-x 18 artem artem 4096 лют 17 16:52 ../
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ mkdir cursor and touch test.txt
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ ls
+and  cursor  test.txt  touch
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ rmdir and cursor test.txt touch
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ ls
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ mkdir cursor && touch test.txt
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ ls
+cursor  test.txt
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ cp test.txt cursor/
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ ls cursor/
+test.txt
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ ll
+total 12
+drwxr-xr-x  3 artem artem 4096 лют 18 22:08 ./
+drwxr-xr-x 18 artem artem 4096 лют 17 16:52 ../
+drwxrwxr-x  2 artem artem 4096 лют 18 22:08 cursor/
+-rw-rw-r--  1 artem artem    0 лют 18 22:08 test.txt
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ ls --help
+Usage: ls [OPTION]... [FILE]...
+List information about the FILEs (the current directory by default).
+Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -a, --all                  do not ignore entries starting with .
+  -A, --almost-all           do not list implied . and ..
+      --author               with -l, print the author of each file
+  -b, --escape               print C-style escapes for nongraphic characters
+      --block-size=SIZE      with -l, scale sizes by SIZE when printing them;
+                               e.g., '--block-size=M'; see SIZE format below
+  -B, --ignore-backups       do not list implied entries ending with ~
+  -c                         with -lt: sort by, and show, ctime (time of last
+                               modification of file status information);
+                               with -l: show ctime and sort by name;
+                               otherwise: sort by ctime, newest first
+  -C                         list entries by columns
+      --color[=WHEN]         colorize the output; WHEN can be 'always' (default
+                               if omitted), 'auto', or 'never'; more info below
+  -d, --directory            list directories themselves, not their contents
+  -D, --dired                generate output designed for Emacs' dired mode
+  -f                         do not sort, enable -aU, disable -ls --color
+  -F, --classify             append indicator (one of */=>@|) to entries
+      --file-type            likewise, except do not append '*'
+      --format=WORD          across -x, commas -m, horizontal -x, long -l,
+                               single-column -1, verbose -l, vertical -C
+      --full-time            like -l --time-style=full-iso
+  -g                         like -l, but do not list owner
+      --group-directories-first
+                             group directories before files;
+                               can be augmented with a --sort option, but any
+                               use of --sort=none (-U) disables grouping
+  -G, --no-group             in a long listing, don't print group names
+  -h, --human-readable       with -l and -s, print sizes like 1K 234M 2G etc.
+      --si                   likewise, but use powers of 1000 not 1024
+  -H, --dereference-command-line
+                             follow symbolic links listed on the command line
+      --dereference-command-line-symlink-to-dir
+                             follow each command line symbolic link
+                               that points to a directory
+      --hide=PATTERN         do not list implied entries matching shell PATTERN
+                               (overridden by -a or -A)
+      --hyperlink[=WHEN]     hyperlink file names; WHEN can be 'always'
+                               (default if omitted), 'auto', or 'never'
+      --indicator-style=WORD  append indicator with style WORD to entry names:
+                               none (default), slash (-p),
+                               file-type (--file-type), classify (-F)
+  -i, --inode                print the index number of each file
+  -I, --ignore=PATTERN       do not list implied entries matching shell PATTERN
+  -k, --kibibytes            default to 1024-byte blocks for disk usage;
+                               used only with -s and per directory totals
+  -l                         use a long listing format
+  -L, --dereference          when showing file information for a symbolic
+                               link, show information for the file the link
+                               references rather than for the link itself
+  -m                         fill width with a comma separated list of entries
+  -n, --numeric-uid-gid      like -l, but list numeric user and group IDs
+  -N, --literal              print entry names without quoting
+  -o                         like -l, but do not list group information
+  -p, --indicator-style=slash
+                             append / indicator to directories
+  -q, --hide-control-chars   print ? instead of nongraphic characters
+      --show-control-chars   show nongraphic characters as-is (the default,
+                               unless program is 'ls' and output is a terminal)
+  -Q, --quote-name           enclose entry names in double quotes
+      --quoting-style=WORD   use quoting style WORD for entry names:
+                               literal, locale, shell, shell-always,
+                               shell-escape, shell-escape-always, c, escape
+                               (overrides QUOTING_STYLE environment variable)
+  -r, --reverse              reverse order while sorting
+  -R, --recursive            list subdirectories recursively
+  -s, --size                 print the allocated size of each file, in blocks
+  -S                         sort by file size, largest first
+      --sort=WORD            sort by WORD instead of name: none (-U), size (-S),
+                               time (-t), version (-v), extension (-X)
+      --time=WORD            with -l, show time as WORD instead of default
+                               modification time: atime or access or use (-u);
+                               ctime or status (-c); also use specified time
+                               as sort key if --sort=time (newest first)
+      --time-style=TIME_STYLE  time/date format with -l; see TIME_STYLE below
+  -t                         sort by modification time, newest first
+  -T, --tabsize=COLS         assume tab stops at each COLS instead of 8
+  -u                         with -lt: sort by, and show, access time;
+                               with -l: show access time and sort by name;
+                               otherwise: sort by access time, newest first
+  -U                         do not sort; list entries in directory order
+  -v                         natural sort of (version) numbers within text
+  -w, --width=COLS           set output width to COLS.  0 means no limit
+  -x                         list entries by lines instead of by columns
+  -X                         sort alphabetically by entry extension
+  -Z, --context              print any security context of each file
+  -1                         list one file per line.  Avoid '\n' with -q or -b
+      --help     display this help and exit
+      --version  output version information and exit
+
+The SIZE argument is an integer and optional unit (example: 10K is 10*1024).
+Units are K,M,G,T,P,E,Z,Y (powers of 1024) or KB,MB,... (powers of 1000).
+
+The TIME_STYLE argument can be full-iso, long-iso, iso, locale, or +FORMAT.
+FORMAT is interpreted like in date(1).  If FORMAT is FORMAT1<newline>FORMAT2,
+then FORMAT1 applies to non-recent files and FORMAT2 to recent files.
+TIME_STYLE prefixed with 'posix-' takes effect only outside the POSIX locale.
+Also the TIME_STYLE environment variable sets the default style to use.
+
+Using color to distinguish file types is disabled both by default and
+with --color=never.  With --color=auto, ls emits color codes only when
+standard output is connected to a terminal.  The LS_COLORS environment
+variable can change the settings.  Use the dircolors command to set it.
+
+Exit status:
+ 0  if OK,
+ 1  if minor problems (e.g., cannot access subdirectory),
+ 2  if serious trouble (e.g., cannot access command-line argument).
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Full documentation at: <https://www.gnu.org/software/coreutils/ls>
+or available locally via: info '(coreutils) ls invocation'
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ ls -lar
+total 12
+-rw-rw-r--  1 artem artem    0 лют 18 22:08 test.txt
+drwxrwxr-x  2 artem artem 4096 лют 18 22:08 cursor
+drwxr-xr-x 18 artem artem 4096 лют 17 16:52 ..
+drwxr-xr-x  3 artem artem 4096 лют 18 22:08 .
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ ls -lar ~
+total 88
+drwxr-xr-x  2 artem artem 4096 лют 17 05:38 Videos
+drwxr-xr-x  2 artem artem 4096 лют 17 05:38 Templates
+-rw-r--r--  1 artem artem    0 лют 17 16:44 .sudo_as_admin_successful
+drwx------  2 artem artem 4096 лют 17 16:52 .ssh
+drwxr-xr-x  6 artem artem 4096 лют 17 15:24 snap
+drwxr-xr-x  2 artem artem 4096 лют 17 05:38 Public
+-rw-r--r--  1 artem artem  807 лют 17 03:30 .profile
+drwx------  3 artem artem 4096 лют 17 14:45 .pki
+drwxr-xr-x  2 artem artem 4096 лют 17 05:38 Pictures
+drwxr-xr-x  2 artem artem 4096 лют 17 05:38 Music
+drwx------  5 artem artem 4096 лют 17 14:45 .mozilla
+drwxr-xr-x  3 artem artem 4096 лют 17 05:38 .local
+drwx------  3 artem artem 4096 лют 17 16:52 .gnupg
+drwxr-xr-x  2 artem artem 4096 лют 17 05:38 Downloads
+drwxr-xr-x  3 artem artem 4096 лют 18 22:08 Documents
+drwxr-xr-x  2 artem artem 4096 лют 17 05:38 Desktop
+drwx------ 15 artem artem 4096 лют 17 16:52 .config
+drwxr-xr-x 17 artem artem 4096 лют 17 22:13 .cache
+-rw-r--r--  1 artem artem 3771 лют 17 03:30 .bashrc
+-rw-r--r--  1 artem artem  220 лют 17 03:30 .bash_logout
+-rw-------  1 artem artem  349 лют 17 23:10 .bash_history
+drwxr-xr-x  3 root  root  4096 лют 17 03:30 ..
+drwxr-xr-x 18 artem artem 4096 лют 17 16:52 .
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ mv test.txt new_test.txt
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ ls
+cursor  new_test.txt
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ rm -r cursor new_test.txt 
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ touch --help
+Usage: touch [OPTION]... FILE...
+Update the access and modification times of each FILE to the current time.
+
+A FILE argument that does not exist is created empty, unless -c or -h
+is supplied.
+
+A FILE argument string of - is handled specially and causes touch to
+change the times of the file associated with standard output.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -a                     change only the access time
+  -c, --no-create        do not create any files
+  -d, --date=STRING      parse STRING and use it instead of current time
+  -f                     (ignored)
+  -h, --no-dereference   affect each symbolic link instead of any referenced
+                         file (useful only on systems that can change the
+                         timestamps of a symlink)
+  -m                     change only the modification time
+  -r, --reference=FILE   use this file's times instead of current time
+  -t STAMP               use [[CC]YY]MMDDhhmm[.ss] instead of current time
+      --time=WORD        change the specified time:
+                           WORD is access, atime, or use: equivalent to -a
+                           WORD is modify or mtime: equivalent to -m
+      --help     display this help and exit
+      --version  output version information and exit
+
+Note that the -d and -t options accept different time-date formats.
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Full documentation at: <https://www.gnu.org/software/coreutils/touch>
+or available locally via: info '(coreutils) touch invocation'
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ mkdir cursor
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ touch hw.txt cursor/
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ ls cursor/
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ ls
+cursor  hw.txt
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ rm hw.txt 
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ cd cursor/
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ touch hw.txt
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ cd ..
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ ls cursor/
+hw.txt
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ touch --help
+Usage: touch [OPTION]... FILE...
+Update the access and modification times of each FILE to the current time.
+
+A FILE argument that does not exist is created empty, unless -c or -h
+is supplied.
+
+A FILE argument string of - is handled specially and causes touch to
+change the times of the file associated with standard output.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -a                     change only the access time
+  -c, --no-create        do not create any files
+  -d, --date=STRING      parse STRING and use it instead of current time
+  -f                     (ignored)
+  -h, --no-dereference   affect each symbolic link instead of any referenced
+                         file (useful only on systems that can change the
+                         timestamps of a symlink)
+  -m                     change only the modification time
+  -r, --reference=FILE   use this file's times instead of current time
+  -t STAMP               use [[CC]YY]MMDDhhmm[.ss] instead of current time
+      --time=WORD        change the specified time:
+                           WORD is access, atime, or use: equivalent to -a
+                           WORD is modify or mtime: equivalent to -m
+      --help     display this help and exit
+      --version  output version information and exit
+
+Note that the -d and -t options accept different time-date formats.
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Full documentation at: <https://www.gnu.org/software/coreutils/touch>
+or available locally via: info '(coreutils) touch invocation'
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ touch -d 20200101 cursor/hw.txt 
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ touch -a 0415 cursor/hw.txt 
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ ll cursor/
+total 8
+drwxrwxr-x 2 artem artem 4096 лют 18 23:11 ./
+drwxr-xr-x 3 artem artem 4096 лют 18 23:24 ../
+-rw-rw-r-- 1 artem artem    0 січ  1  2020 hw.txt
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ touch -d 20201111 cursor/hw.txt 
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ ll cursor/
+total 8
+drwxrwxr-x 2 artem artem 4096 лют 18 23:11 ./
+drwxr-xr-x 3 artem artem 4096 лют 18 23:24 ../
+-rw-rw-r-- 1 artem artem    0 лис 11 00:00 hw.txt
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ touch -t 202001010415.00 cursor/hw.txt 
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ ll cursor/
+total 8
+drwxrwxr-x 2 artem artem 4096 лют 18 23:11 ./
+drwxr-xr-x 3 artem artem 4096 лют 18 23:24 ../
+-rw-rw-r-- 1 artem artem    0 січ  1  2020 hw.txt
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ touch -t 2020110415.00 cursor/hw.txt
+touch: invalid date format ‘2020110415.00’
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ ^C
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ touch -amt 202001010415.00 hw.txt 
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ ll
+total 8
+drwxrwxr-x 2 artem artem 4096 лют 18 23:11 ./
+drwxr-xr-x 3 artem artem 4096 лют 18 23:24 ../
+-rw-rw-r-- 1 artem artem    0 січ  1  2020 hw.txt
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ ls --help
+Usage: ls [OPTION]... [FILE]...
+List information about the FILEs (the current directory by default).
+Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -a, --all                  do not ignore entries starting with .
+  -A, --almost-all           do not list implied . and ..
+      --author               with -l, print the author of each file
+  -b, --escape               print C-style escapes for nongraphic characters
+      --block-size=SIZE      with -l, scale sizes by SIZE when printing them;
+                               e.g., '--block-size=M'; see SIZE format below
+  -B, --ignore-backups       do not list implied entries ending with ~
+  -c                         with -lt: sort by, and show, ctime (time of last
+                               modification of file status information);
+                               with -l: show ctime and sort by name;
+                               otherwise: sort by ctime, newest first
+  -C                         list entries by columns
+      --color[=WHEN]         colorize the output; WHEN can be 'always' (default
+                               if omitted), 'auto', or 'never'; more info below
+  -d, --directory            list directories themselves, not their contents
+  -D, --dired                generate output designed for Emacs' dired mode
+  -f                         do not sort, enable -aU, disable -ls --color
+  -F, --classify             append indicator (one of */=>@|) to entries
+      --file-type            likewise, except do not append '*'
+      --format=WORD          across -x, commas -m, horizontal -x, long -l,
+                               single-column -1, verbose -l, vertical -C
+      --full-time            like -l --time-style=full-iso
+  -g                         like -l, but do not list owner
+      --group-directories-first
+                             group directories before files;
+                               can be augmented with a --sort option, but any
+                               use of --sort=none (-U) disables grouping
+  -G, --no-group             in a long listing, don't print group names
+  -h, --human-readable       with -l and -s, print sizes like 1K 234M 2G etc.
+      --si                   likewise, but use powers of 1000 not 1024
+  -H, --dereference-command-line
+                             follow symbolic links listed on the command line
+      --dereference-command-line-symlink-to-dir
+                             follow each command line symbolic link
+                               that points to a directory
+      --hide=PATTERN         do not list implied entries matching shell PATTERN
+                               (overridden by -a or -A)
+      --hyperlink[=WHEN]     hyperlink file names; WHEN can be 'always'
+                               (default if omitted), 'auto', or 'never'
+      --indicator-style=WORD  append indicator with style WORD to entry names:
+                               none (default), slash (-p),
+                               file-type (--file-type), classify (-F)
+  -i, --inode                print the index number of each file
+  -I, --ignore=PATTERN       do not list implied entries matching shell PATTERN
+  -k, --kibibytes            default to 1024-byte blocks for disk usage;
+                               used only with -s and per directory totals
+  -l                         use a long listing format
+  -L, --dereference          when showing file information for a symbolic
+                               link, show information for the file the link
+                               references rather than for the link itself
+  -m                         fill width with a comma separated list of entries
+  -n, --numeric-uid-gid      like -l, but list numeric user and group IDs
+  -N, --literal              print entry names without quoting
+  -o                         like -l, but do not list group information
+  -p, --indicator-style=slash
+                             append / indicator to directories
+  -q, --hide-control-chars   print ? instead of nongraphic characters
+      --show-control-chars   show nongraphic characters as-is (the default,
+                               unless program is 'ls' and output is a terminal)
+  -Q, --quote-name           enclose entry names in double quotes
+      --quoting-style=WORD   use quoting style WORD for entry names:
+                               literal, locale, shell, shell-always,
+                               shell-escape, shell-escape-always, c, escape
+                               (overrides QUOTING_STYLE environment variable)
+  -r, --reverse              reverse order while sorting
+  -R, --recursive            list subdirectories recursively
+  -s, --size                 print the allocated size of each file, in blocks
+  -S                         sort by file size, largest first
+      --sort=WORD            sort by WORD instead of name: none (-U), size (-S),
+                               time (-t), version (-v), extension (-X)
+      --time=WORD            with -l, show time as WORD instead of default
+                               modification time: atime or access or use (-u);
+                               ctime or status (-c); also use specified time
+                               as sort key if --sort=time (newest first)
+      --time-style=TIME_STYLE  time/date format with -l; see TIME_STYLE below
+  -t                         sort by modification time, newest first
+  -T, --tabsize=COLS         assume tab stops at each COLS instead of 8
+  -u                         with -lt: sort by, and show, access time;
+                               with -l: show access time and sort by name;
+                               otherwise: sort by access time, newest first
+  -U                         do not sort; list entries in directory order
+  -v                         natural sort of (version) numbers within text
+  -w, --width=COLS           set output width to COLS.  0 means no limit
+  -x                         list entries by lines instead of by columns
+  -X                         sort alphabetically by entry extension
+  -Z, --context              print any security context of each file
+  -1                         list one file per line.  Avoid '\n' with -q or -b
+      --help     display this help and exit
+      --version  output version information and exit
+
+The SIZE argument is an integer and optional unit (example: 10K is 10*1024).
+Units are K,M,G,T,P,E,Z,Y (powers of 1024) or KB,MB,... (powers of 1000).
+
+The TIME_STYLE argument can be full-iso, long-iso, iso, locale, or +FORMAT.
+FORMAT is interpreted like in date(1).  If FORMAT is FORMAT1<newline>FORMAT2,
+then FORMAT1 applies to non-recent files and FORMAT2 to recent files.
+TIME_STYLE prefixed with 'posix-' takes effect only outside the POSIX locale.
+Also the TIME_STYLE environment variable sets the default style to use.
+
+Using color to distinguish file types is disabled both by default and
+with --color=never.  With --color=auto, ls emits color codes only when
+standard output is connected to a terminal.  The LS_COLORS environment
+variable can change the settings.  Use the dircolors command to set it.
+
+Exit status:
+ 0  if OK,
+ 1  if minor problems (e.g., cannot access subdirectory),
+ 2  if serious trouble (e.g., cannot access command-line argument).
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Full documentation at: <https://www.gnu.org/software/coreutils/ls>
+or available locally via: info '(coreutils) ls invocation'
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ stat hw.txt 
+  File: hw.txt
+  Size: 0         	Blocks: 0          IO Block: 4096   regular empty file
+Device: 10306h/66310d	Inode: 1708969     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/   artem)   Gid: ( 1000/   artem)
+Access: 2020-01-01 04:15:00.000000000 +0200
+Modify: 2020-01-01 04:15:00.000000000 +0200
+Change: 2021-02-18 23:37:23.694773925 +0200
+ Birth: -
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ rm hw.txt 
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ touch hw.txt
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ touch -t 202001010415.00 hw.txt 
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ stat hw.txt 
+  File: hw.txt
+  Size: 0         	Blocks: 0          IO Block: 4096   regular empty file
+Device: 10306h/66310d	Inode: 1708969     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/   artem)   Gid: ( 1000/   artem)
+Access: 2020-01-01 04:15:00.000000000 +0200
+Modify: 2020-01-01 04:15:00.000000000 +0200
+Change: 2021-02-18 23:39:40.705993873 +0200
+ Birth: -
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ touch hw.sh, hw1.sh, hw2.sh, hw1.txt
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ ls
+hw1.sh,  hw1.txt  hw2.sh,  hw.sh,  hw.txt
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ ls | grep .sh
+hw1.sh,
+hw2.sh,
+hw.sh,
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ cp *.txt new_dir
+cp: target 'new_dir' is not a directory
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ mkdir new_dir
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ cp *.txt new_dir/
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ echo cursor > hw.txt 
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ cat hw.txt 
+cursor
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ chmod u-7 hw.txt 
+chmod: invalid mode: ‘u-7’
+Try 'chmod --help' for more information.
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ chmod u-rwx hw.txt 
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ cat hw.txt 
+cat: hw.txt: Permission denied
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ sudo cat hw.txt 
+[sudo] password for artem: 
+cursor
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ chmod u+rwx hw.txt 
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ cat hw.txt 
+cursor
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ echo {1..10} > hw.txt 
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ cat hw.txt 
+1 2 3 4 5 6 7 8 9 10
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ echo -e {1..10}\n > hw.txt 
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ cat hw.txt 
+1n 2n 3n 4n 5n 6n 7n 8n 9n 10n
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ echo -e {1..10}'\n' > hw.txt 
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ cat hw.txt 
+1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+ 10
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ nano hw.txt 
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ cat hw.txt | head -7
+1
+2
+3
+4
+5
+6
+7
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ ls
+hw1.sh,  hw1.txt  hw2.sh,  hw.sh,  hw.txt  new_dir
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ echo Hello > test.sh
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ ls
+hw1.sh,  hw1.txt  hw2.sh,  hw.sh,  hw.txt  new_dir  test.sh
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ test.sh
+test.sh: command not found
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ bash test.sh
+test.sh: line 1: Hello: command not found
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ echo "echo Hello" > test.sh
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ test.sh
+test.sh: command not found
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ bash test.sh 
+Hello

@@ -1,0 +1,90 @@
+artem@artem-IdeaPad-L340-15IRH-Gaming:~$ cd Documents/
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ ll
+total 8
+drwxr-xr-x  2 artem artem 4096 лют 17 21:14 ./
+drwxr-xr-x 18 artem artem 4096 лют 17 16:52 ../
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ mkdir cursor && touch test.txt
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ cp test.txt cursor/
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ ls cursor/
+test.txt
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ ls -lar
+total 12
+-rw-rw-r--  1 artem artem    0 лют 18 22:08 test.txt
+drwxrwxr-x  2 artem artem 4096 лют 18 22:08 cursor
+drwxr-xr-x 18 artem artem 4096 лют 17 16:52 ..
+drwxr-xr-x  3 artem artem 4096 лют 18 22:08 .
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ ls -lar ~
+total 88
+drwxr-xr-x  2 artem artem 4096 лют 17 05:38 Videos
+drwxr-xr-x  2 artem artem 4096 лют 17 05:38 Templates
+-rw-r--r--  1 artem artem    0 лют 17 16:44 .sudo_as_admin_successful
+drwx------  2 artem artem 4096 лют 17 16:52 .ssh
+drwxr-xr-x  6 artem artem 4096 лют 17 15:24 snap
+drwxr-xr-x  2 artem artem 4096 лют 17 05:38 Public
+-rw-r--r--  1 artem artem  807 лют 17 03:30 .profile
+drwx------  3 artem artem 4096 лют 17 14:45 .pki
+drwxr-xr-x  2 artem artem 4096 лют 17 05:38 Pictures
+drwxr-xr-x  2 artem artem 4096 лют 17 05:38 Music
+drwx------  5 artem artem 4096 лют 17 14:45 .mozilla
+drwxr-xr-x  3 artem artem 4096 лют 17 05:38 .local
+drwx------  3 artem artem 4096 лют 17 16:52 .gnupg
+drwxr-xr-x  2 artem artem 4096 лют 17 05:38 Downloads
+drwxr-xr-x  3 artem artem 4096 лют 18 22:08 Documents
+drwxr-xr-x  2 artem artem 4096 лют 17 05:38 Desktop
+drwx------ 15 artem artem 4096 лют 17 16:52 .config
+drwxr-xr-x 17 artem artem 4096 лют 17 22:13 .cache
+-rw-r--r--  1 artem artem 3771 лют 17 03:30 .bashrc
+-rw-r--r--  1 artem artem  220 лют 17 03:30 .bash_logout
+-rw-------  1 artem artem  349 лют 17 23:10 .bash_history
+drwxr-xr-x  3 root  root  4096 лют 17 03:30 ..
+drwxr-xr-x 18 artem artem 4096 лют 17 16:52 .
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ mv test.txt new_test.txt
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ ls
+cursor  new_test.txt
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ rm cursor/test.txt new_test.txt 
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents$ cd cursor/
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ touch hw.txt
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ cd ..
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ touch -t 202001010415.00 hw.txt 
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ stat hw.txt 
+  File: hw.txt
+  Size: 0         	Blocks: 0          IO Block: 4096   regular empty file
+Device: 10306h/66310d	Inode: 1708969     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/   artem)   Gid: ( 1000/   artem)
+Access: 2020-01-01 04:15:00.000000000 +0200
+Modify: 2020-01-01 04:15:00.000000000 +0200
+Change: 2021-02-18 23:39:40.705993873 +0200
+ Birth: -
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ touch hw.sh, hw1.sh, hw2.sh, hw1.txt
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ ls
+hw1.sh,  hw1.txt  hw2.sh,  hw.sh,  hw.txt
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ ls | grep *.sh #Did after completion
+test.sh
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ mkdir new_dir
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ cp *.txt new_dir/
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ echo cursor > hw.txt 
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ cat hw.txt 
+cursor
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ chmod u-rwx hw.txt 
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ cat hw.txt 
+cat: hw.txt: Permission denied
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ sudo cat hw.txt 
+[sudo] password for artem: 
+cursor
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ chmod u+rwx hw.txt 
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ cat hw.txt 
+cursor
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ nano hw.txt 
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ cat hw.txt | head -7
+1
+2
+3
+4
+5
+6
+7
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ ls
+hw1.sh,  hw1.txt  hw2.sh,  hw.sh,  hw.txt  new_dir
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ echo "echo Hello" > test.sh
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/cursor$ bash test.sh 
+Hello
