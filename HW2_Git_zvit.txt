@@ -1,0 +1,251 @@
+1. Create a folder called cursor_git_hw
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT$ mkdir cursor_git_hw
+
+2. cd into the cursor_git_hw folder.
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT$ cd cursor_git_hw
+
+3. Create a file called first.txt.
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ touch first.txt
+
+4. Add first.txt to the staging area.
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ git add .
+
+5. Commit with the message "adding first.txt".
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ git commit -m "adding first.txt"
+[master (root-commit) 564d7f5] adding first.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 cursor_git_hw/first.txt
+
+6. Check out your commit with git log.
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ git log
+commit 564d7f59519d3029d21a4e9fbf68aacb0f02e601 (HEAD -> master)
+Author: Artem Boiko <artemboyko2002@gmail.com>
+Date:   Tue Feb 23 12:45:42 2021 +0200
+
+    adding first.txt
+
+7. Create another file called second.txt.
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ touch second.txt
+
+8. Add second.txt to the staging area.
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ git add second.txt 
+
+9. Commit with the message "adding second.txt"
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ git commit -m "adding second.txt"
+[master 063fa48] adding second.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 cursor_git_hw/second.txt
+
+10. Remove the first.txt file
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ rm first.txt 
+
+11. Add this change to the staging area
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ git add .
+
+12. Commit with the message "removing first.txt"
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ git commit -m "removing first.txt"
+[master 514a4fe] removing first.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 cursor_git_hw/first.txt
+
+13. Check out your commits using git log
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ git log
+commit 514a4feab4b6185ee29250e864d76cb24891cca2 (HEAD -> master)
+Author: Artem Boiko <artemboyko2002@gmail.com>
+Date:   Tue Feb 23 12:48:51 2021 +0200
+
+    removing first.txt
+
+commit 063fa48da2b7a275940503d297b1f5ee011c8f0f
+Author: Artem Boiko <artemboyko2002@gmail.com>
+Date:   Tue Feb 23 12:47:42 2021 +0200
+
+    adding second.txt
+
+commit 564d7f59519d3029d21a4e9fbf68aacb0f02e601
+Author: Artem Boiko <artemboyko2002@gmail.com>
+Date:   Tue Feb 23 12:45:42 2021 +0200
+
+    adding first.txt
+
+14. Push your changes to remote
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ git push
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (10/10), 799 bytes | 266.00 KiB/s, done.
+Total 10 (delta 0), reused 0 (delta 0)
+To github.com:Artem1k/CURSOR-GIT.git
+ * [new branch]      master -> master
+
+15. Create new branch from master called `first` (without checkouting)
+
+rtem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ git branch
+* master
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ git branch first
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ git branch
+  first
+* master
+
+16. Create one more branch from master called `second` (with checkouting to it)
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ git checkout -b second
+Switched to a new branch 'second'
+
+17. Change the second.txt file with "Hello" string.
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ echo Hello > second.txt
+
+18. Stash you changes and checkout to first branch.
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ git stash 
+Saved working directory and index state WIP on second: 514a4fe removing first.txt
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ git checkout first
+Switched to branch 'first'
+
+19. Checkout back and Stash Pop the changes.
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ git checkout second 
+Switched to branch 'second'
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ git stash pop
+On branch second
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   second.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Dropped refs/stash@{0} (4de4a7ddb9680298d83cdd7fb75d541b99ddc577)
+
+20. Add your changes to the staging area
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ git add .
+
+21. Commit with the message "Changing second.txt".
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ git commit -m "Changing second.txt"
+[second 042b0af] Changing second.txt
+ 1 file changed, 1 insertion(+)
+
+22. Push your changes to remote
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ git push origin second 
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Writing objects: 100% (4/4), 308 bytes | 308.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'second' on GitHub by visiting:
+remote:      https://github.com/Artem1k/CURSOR-GIT/pull/new/second
+remote: 
+To github.com:Artem1k/CURSOR-GIT.git
+ * [new branch]      second -> second
+
+23. Checkout to first branch.
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ git checkout first 
+Switched to branch 'first'
+
+24. Change the second.txt file with "Cursor" string.
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ cat second.txt 
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ echo Cursor > second.txt 
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ cat second.txt 
+Cursor
+
+25. Add your changes to the staging area
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ git add .
+
+26. Commit with the message "Changing second.txt".
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ git commit -m "Changing second.txt"
+[first d20df9a] Changing second.txt
+ 1 file changed, 1 insertion(+)
+
+27. Push your changes to remote
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ git push origin first 
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Writing objects: 100% (4/4), 310 bytes | 310.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'first' on GitHub by visiting:
+remote:      https://github.com/Artem1k/CURSOR-GIT/pull/new/first
+remote: 
+To github.com:Artem1k/CURSOR-GIT.git
+ * [new branch]      first -> first
+
+28. Checkout to master branch
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ git checkout master 
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+29*. Merge the changes from second branch
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ git merge second 
+Updating 514a4fe..042b0af
+Fast-forward
+ cursor_git_hw/second.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+30*. Then merge the changes from first branch
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ git merge first 
+Auto-merging cursor_git_hw/second.txt
+CONFLICT (content): Merge conflict in cursor_git_hw/second.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+31*. Resolve conflict and push the changes to remote
+
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ git status 
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+	both modified:   second.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ cat second.txt 
+<<<<<<< HEAD
+Hello
+=======
+Cursor
+>>>>>>> first
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ nano second.txt 
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ cat second.txt 
+Hello
+Cursor
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ git add second.txt 
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ git commit -m "conflict solved"
+[master e48f429] conflict solved
+artem@artem-IdeaPad-L340-15IRH-Gaming:~/Documents/Projects/CURSOR-GIT/cursor_git_hw$ git push
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Writing objects: 100% (4/4), 341 bytes | 341.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To github.com:Artem1k/CURSOR-GIT.git
+   514a4fe..e48f429  master -> master

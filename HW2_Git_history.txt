@@ -1,0 +1,55 @@
+  205  git clone git@github.com:Artem1k/CURSOR-GIT.git
+  206  ls
+  207  cd CURSOR-GIT/
+  208  cd .git/
+  209  ls
+  210  cd ..
+  211  mkdir cursor_git_hw
+  212  cd cursor_git_hw
+  213  touch first.txt
+  214  git add .
+  215  git status
+  216  git commit -m "adding first.txt"
+  217  git log
+  218  ls
+  219  touch second.txt
+  220  git add second.txt 
+  221  git commit -m "adding second.txt"
+  222  rm first.txt 
+  223  git add .
+  224  git commit -m "removing first.txt"
+  225  git log
+  226  git push
+  227  git branch
+  228  git branch first
+  229  git branch
+  230  git checkout -b second
+  231  echo Hello > second.txt
+  232  git stash 
+  233  git checkout first
+  234  git checkout second 
+  235  git stash pop
+  236  git add .
+  237  git commit -m "Changing second.txt"
+  238  git push 
+  239  git push origin second 
+  240  git log -1
+  241  git checkout first 
+  242  cat second.txt 
+  243  echo Cursor > second.txt 
+  244  cat second.txt 
+  245  git add .
+  246  git commit -m "Changing second.txt"
+  247  git push
+  248  git push origin first 
+  249  git checkout master 
+  250  git branch second 
+  251  git merge second 
+  252  git merge first 
+  253  git status 
+  254  cat second.txt 
+  255  nano second.txt 
+  256  cat second.txt 
+  257  git add second.txt 
+  258  git commit -m "conflict solved"
+  259  git push
