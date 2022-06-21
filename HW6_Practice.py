@@ -149,8 +149,8 @@ class Tomato(Vegetables):
     def __init__(self, index, vegetable_type, name):
         super().__init__(vegetable_type, name)
         self._index = index
-        self._vegetable_type = vegetable_type
-        self._name = name
+        # self._vegetable_type = vegetable_type
+        # self._name = name
         self._state = 0
         Tomato.instances.append(self)
 
@@ -225,8 +225,8 @@ class Apple(Fruits):
     def __init__(self, index, fruit_type, name):
         super().__init__(fruit_type, name)
         self._index = index
-        self._fruit_type = fruit_type
-        self._name = name
+        # self._fruit_type = fruit_type
+        # self._name = name
         self._state = 0
         Apple.instances.append(self)
 
@@ -291,8 +291,8 @@ class AppleTree:
 class StarGardener(Gardener):
     def __init__(self, name, plants):
         super().__init__(name, plants)
-        self._name = name
-        self._plants = plants
+        # self._name = name
+        # self._plants = plants
 
     def __repr__(self):
         return f'{self._name}'
@@ -330,8 +330,8 @@ class StarGardener(Gardener):
 class Pest(Pests):
     def __init__(self, pests_type, quantity):
         super().__init__(pests_type, quantity)
-        self._pests_type = pests_type
-        self._quantity = quantity
+        # self._pests_type = pests_type
+        # self._quantity = quantity
 
     def __repr__(self):
         return f'{self._quantity} {self._pests_type}'
